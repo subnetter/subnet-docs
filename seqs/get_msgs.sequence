@@ -1,0 +1,14 @@
+title: Messages Delivery (Pull Pattern)
+
+participant B
+participant SB
+
+B -> SB: NewSession(GetMessages(B, t)) or Message(GetMessages(B, t))
+SB --> B: {msg_metadata...}
+Note over SB: L2Pay(SB, msgs_price)
+B -> SB: Receive({msg_id...}, receipt)
+SB --> B: {msg...}
+SB -> SB: DeleteFromStore({msg...})
+Note over SB: New message(s) arrives...
+SB -> B: {msg_metadata...}
+Note over B: Continue from Receive() above...

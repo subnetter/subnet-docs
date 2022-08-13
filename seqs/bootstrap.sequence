@@ -1,0 +1,23 @@
+title: Bootstrapping
+
+Note over A: Gen(Id(A))
+
+A -> BNode: GetAvailableProviders()
+BNode --> A: {ProviderBundle,...}
+
+A -> S0: GetServiceTerms()
+S0 --> A: Terms(S0)
+
+A -> S0: NewSessionRequest(StartService(ClientBundle(A, S0), DepositTransaction))
+
+S0 -> Blockchain API: Submit DepositTransaction
+
+Note over S0: Confirm DepositTransaction
+
+Note over S0: SET S0 = Provider(A)
+
+S0 -> Blockchain API: Publish ProviderSigndClientBundle(A, S0)
+
+S0 --> A: ProviderSigndClientBundle(A, S0)
+
+Note over A: SET S0 = Provider(A)

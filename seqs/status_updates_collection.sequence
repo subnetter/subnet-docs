@@ -1,0 +1,14 @@
+title: Collect Status Updates
+
+participant B
+participant SB
+
+# Note that SB async collects all B's subscribed updates
+Note over B: PERIODIC
+B -> SB: GetStatusUpdatesCount(B, t)
+SB --> B: num_feed_items, t
+
+B -> SB: GetStatusUpdates(B, t, receipt)
+Note over SB: Verify and store receipt
+SB --> B: (feed_meta_data, {status...})
+B -> B: Store(feedId,{status...}, last_update=t)

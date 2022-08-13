@@ -1,0 +1,9 @@
+title: Post Status Update Reply
+
+User B -> B: Author a reply to a post or to a reply
+B -> A: SendReply(channel_id, update_id, item)
+Note over A: Validate and store content item
+
+Note over A: For each subscriber to channel c
+
+A -> C: PublishReply(channel_id, update_id, item)

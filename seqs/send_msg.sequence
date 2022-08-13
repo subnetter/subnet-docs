@@ -1,0 +1,29 @@
+title: Sending a message (A -> B, new session)
+
+participant A
+participant SA
+participant SB
+
+A -> SA: GetClientBundleId(B)
+Note over SA: Query SNP Blockchain for the data
+SA -> A: Bundle(B, SB)
+
+Note over A: Store(B, Bundle(B, SB))
+
+# Using X2DH
+Note over A: M1 := NewSession(B, MSG)
+
+# Using EDH
+Note over A: M2 := ForwardMessage(SB, M1)
+Note over A: payment := Pay(A, SA, price)
+
+# Using X2DH
+A -> SA: Message(payment, RouteMessage(SB, M2))
+SA -> SB: Message(M2)
+
+Note over SB: VerifyPouw(SA)
+
+# using X2DH
+SB -> SB: Decrypt M2, Store(B, t, M1)
+SB --> SA: Ack()
+SA --> A: Ack()

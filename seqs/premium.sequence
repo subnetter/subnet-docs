@@ -1,0 +1,13 @@
+title: Premium Messages
+
+participant A
+participant B
+
+A -> B: {item_id, desc, price}
+User B -> B: PurchaseItem(item_id)
+B -> SB: Pay(price, A, item_id)
+Note over SB: Process payment on payment network
+SB -> B: ConfirmPurchase(receipt)
+B -> A: PurchaseItem(item_id, receipt)
+A -> B: SendItemInMessage(item)
+B -> User B: PresentContent(item)

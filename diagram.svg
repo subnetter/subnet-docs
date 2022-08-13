@@ -1,0 +1,76 @@
+
+<svg width="1800px" height="1060px" viewBox="0 0 1800 1060" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Network" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-400.000000, -380.000000)">
+            <g id="Group-4" transform="translate(400.000000, 380.000000)">
+                <g id="Group-3">
+                    <ellipse id="Oval" stroke="#979797" fill-opacity="0.481807255" fill="#5AC8FA" cx="900" cy="530" rx="660" ry="390"></ellipse>
+                    <g id="Group-2" transform="translate(301.000000, 460.000000)">
+                        <rect id="Rectangle-Copy" stroke="#979797" fill="#FF9500" x="0.5" y="0.5" width="199" height="119" rx="8"></rect>
+                        <text id="Full-Node" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="36" font-weight="bold" fill="#000000">
+                            <tspan x="19.194" y="69">Full Node</tspan>
+                        </text>
+                    </g>
+                    <g id="Group" transform="translate(0.000000, 459.000000)">
+                        <rect id="Rectangle-Copy" stroke="#979797" fill="#FFCC00" x="0.5" y="0.5" width="199" height="119" rx="8"></rect>
+                        <text id="Client" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="36" font-weight="bold" fill="#000000">
+                            <tspan x="50.032" y="69">Client</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-2-Copy" transform="translate(801.000000, 740.000000)">
+                        <rect id="Rectangle-Copy" stroke="#979797" fill="#FF9500" x="0.5" y="0.5" width="199" height="119" rx="8"></rect>
+                        <text id="Full-Node" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="36" font-weight="bold" fill="#000000">
+                            <tspan x="19.194" y="69">Full Node</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-Copy" transform="translate(800.000000, 940.000000)">
+                        <rect id="Rectangle-Copy" stroke="#979797" fill="#FFCC00" x="0.5" y="0.5" width="199" height="119" rx="8"></rect>
+                        <text id="Client" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="36" font-weight="bold" fill="#000000">
+                            <tspan x="50.032" y="69">Client</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-2-Copy" transform="translate(800.000000, 180.000000)">
+                        <rect id="Rectangle-Copy" stroke="#979797" fill="#FF9500" x="0.5" y="0.5" width="199" height="119" rx="8"></rect>
+                        <text id="Full-Node" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="36" font-weight="bold" fill="#000000">
+                            <tspan x="19.194" y="69">Full Node</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-Copy" transform="translate(801.000000, 0.000000)">
+                        <rect id="Rectangle-Copy" stroke="#979797" fill="#FFCC00" x="0.5" y="0.5" width="199" height="119" rx="8"></rect>
+                        <text id="Client" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="36" font-weight="bold" fill="#000000">
+                            <tspan x="50.032" y="69">Client</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-2-Copy-2" transform="translate(1301.000000, 460.000000)">
+                        <rect id="Rectangle-Copy" stroke="#979797" fill="#FF9500" x="0.5" y="0.5" width="199" height="119" rx="8"></rect>
+                        <text id="Full-Node" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="36" font-weight="bold" fill="#000000">
+                            <tspan x="19.194" y="69">Full Node</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-Copy-2" transform="translate(1600.000000, 459.000000)">
+                        <rect id="Rectangle-Copy" stroke="#979797" fill="#FFCC00" x="0.5" y="0.5" width="199" height="119" rx="8"></rect>
+                        <text id="Client" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="36" font-weight="bold" fill="#000000">
+                            <tspan x="50.032" y="69">Client</tspan>
+                        </text>
+                    </g>
+                    <path id="Line" d="M290.505902,519.591857 L206.005434,520.505376 L205.994624,519.505434 L290.495092,518.591916 L290.451851,514.592149 L299.499971,518.994595 L290.549142,523.591624 L290.505902,519.591857 Z" fill="#000000" fill-rule="nonzero"></path>
+                    <path id="Line-Copy" d="M900.606203,868.493087 L901.50621,940.493711 L900.506289,940.50621 L899.606281,868.505586 L895.606593,868.555582 L899.99375,859.500039 L904.60589,868.44309 L900.606203,868.493087 Z" fill="#000000" fill-rule="nonzero"></path>
+                    <path id="Line-Copy-2" d="M900.641578,128.490488 L901.508263,180.491598 L900.508402,180.508263 L899.641716,128.507152 L895.642272,128.573809 L899.991668,119.500069 L904.641022,128.42383 L900.641578,128.490488 Z" fill="#000000" fill-rule="nonzero"></path>
+                    <path id="Line" d="M1591.5,522.5 L1500.5,522.5 L1500.5,521.5 L1591.5,521.5 L1591.5,517.5 L1600.5,522 L1591.5,526.5 L1591.5,522.5 Z" fill="#000000" fill-rule="nonzero"></path>
+                    <text id="P2P-Network-Fully-Pe" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="36" font-weight="bold" fill="#000000">
+                        <tspan x="790.986" y="383">P2P Network</tspan>
+                        <tspan x="1015.014" y="383" font-size="32"></tspan>
+                        <tspan x="747.24" y="426" font-size="32">Fully Permissionless</tspan>
+                        <tspan x="767.08" y="464" font-size="32">Custom Kadmelia</tspan>
+                        <tspan x="823.336" y="502" font-size="32">Direct Dial</tspan>
+                        <tspan x="784.44" y="540" font-size="32">Cryptocurrency</tspan>
+                        <tspan x="720.216" y="578" font-size="32">Custom Blockchain TXs</tspan>
+                        <tspan x="759.864" y="616" font-size="32">Ledger Consensus</tspan>
+                        <tspan x="795.432" y="654" font-size="32">Custom X3DH</tspan>
+                        <tspan x="785.352" y="692" font-size="32">DH_Handshake</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

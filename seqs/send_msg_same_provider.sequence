@@ -1,0 +1,24 @@
+title: Sending a message (A -> B, new session)
+
+# B is serviced by SA
+
+participant A
+participant SA
+
+A -> SA: GetClientBundleId(B)
+Note over SA: Query SNP Blockchain for the data
+SA -> A: Bundle(B, SB)
+
+Note over A: Store(B, Bundle(B, SA))
+
+# Using X2DH
+Note over A: M := NewSession(B, MSG) or Message(B, MSG)
+
+# Using EDH
+Note over A: payment := Pay(A, SA, price)
+
+A -> SA: Message(payment, MessageToServicedClientRequest(M))
+
+Note over SA: Store(B, t, M1)
+
+SA --> A: Ack()

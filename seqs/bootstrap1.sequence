@@ -1,0 +1,35 @@
+title: Offline Bootstrapping
+
+Note over A: Has DialupInfo(S0)
+
+A -> S0: GetServiceTerms()
+S0 --> A: Terms(S0)
+
+A -> S0: GetIdentityBundle()
+S0 -> A: Bundle(S0)
+
+
+A -> S0: NewSessionRequest(StartService(ClientBundle(A, SA), Payment))
+
+S0 -> Blockchain API: Submit(Payment)
+
+Note over s0: Confirm Payment Transaction
+
+Note over S0: SET S0 = Provider(A)
+
+S0 -> blockchain API: Publish ProviderSigndClientBundle(A, S0)
+
+
+S0 --> A: ProviderSigndClientBundle(A, S0)
+
+Note over A: SET S0 = Provider(A)
+Note over S0: SET S0 = Provider(A)
+
+S0 -> BNode: SearchProviders(A, 20)
+BNode --> S0: S0,...,S19
+
+Note over S0: For each Si in {S1,...,S20}
+S0 -> Si: NewSessionRequest(PubBundle(ProviderSigndClientBundle(A, S0)))
+Note over Si: VerifyPouw(S0)
+Note over Si: SET S0 = Provider(A)
+Note over Si: Store ProviderSigndClientBundle(A, S0)

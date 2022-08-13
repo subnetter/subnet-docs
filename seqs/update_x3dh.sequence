@@ -1,0 +1,16 @@
+title: Update Client Bundle (ongoing)
+
+participant A
+participant SA
+participant BNode
+participant Si
+
+Note over A: Generate new keys and bundle(A)
+A -> SA: GetBundle(SA)
+A -> SA: SetBundle(Bundle(A, SA), payment)
+
+SA -> Blockchain API: Submit(Payment)
+
+Note over sA: Confirm Payment
+
+Note over SA: Store(Bundle(A, SA))
