@@ -6,7 +6,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'icon.png',
-  organizationName: 'avive', // Usually your GitHub org/user name.
+  organizationName: 'subnetter', // Usually your GitHub org/user name.
   projectName: 'subnet-docs', // Usually your repo name.
   themeConfig: {
     prism: {
@@ -54,7 +54,7 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/subnet',
+              href: 'https://github.com/subnetter/subnet-docs',
             },
           ],
         },
