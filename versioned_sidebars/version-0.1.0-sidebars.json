@@ -1,0 +1,271 @@
+{
+  "version-0.1.0/someSidebar": [
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "👋 Intro",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-0.1.0/intro/intro"
+        },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/intro/design_goals"
+        },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/intro/bizmodel"
+        },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/intro/tech"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "🌍 Network Protocol",
+      "items": [
+          {
+            "type": "doc",
+            "id": "version-0.1.0/unp/network_protocol"
+          },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/unp/messaging"
+        },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/unp/receiving_msgs"
+        },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/unp/client_onboarding"
+      },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/unp/identity_bundles"
+        },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/unp/service_bundles"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "📐 Product Design",
+      "items": [
+          {
+            "type": "doc",
+            "id": "version-0.1.0/product/clients"
+          },
+          {
+            "type": "doc",
+            "id": "version-0.1.0/product/providers"
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "📨 Messaging",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-0.1.0/features/messaging/goals"
+            },
+            {
+              "type": "doc",
+              "id": "version-0.1.0/features/messaging/design"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "📧 Prioty Inbox",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-0.1.0/features/priority_inbox/goals"
+            },
+            {
+              "type": "doc",
+              "id": "version-0.1.0/features/priority_inbox/design"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "🔒 Privacy",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-0.1.0/product/privacy/privacy"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "🗃 User Data",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-0.1.0/features/data/design"
+            },
+            {
+              "type": "doc",
+              "id": "version-0.1.0/features/data/goals"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "👨‍👨‍👧‍👦 Groups",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-0.1.0/features/groups/goals"
+            },
+            {
+              "type": "doc",
+              "id": "version-0.1.0/features/groups/design"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "🙋‍♂️ Status Updates",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-0.1.0/features/status_updates/goals"
+            },
+            {
+              "type": "doc",
+              "id": "version-0.1.0/features/status_updates/design"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "🖼 Paid Content",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-0.1.0/features/paid_content/goals"
+            },
+            {
+              "type": "doc",
+              "id": "version-0.1.0/features/paid_content/design"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "💵 Payments",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-0.1.0/features/payments/cryptocurrency"
+            },
+            {
+              "type": "doc",
+              "id": "version-0.1.0/features/payments/design"
+            },
+            {
+              "type": "doc",
+              "id": "version-0.1.0/features/payments/billing"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "📲 Feeds",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-0.1.0/features/feeds/goals"
+            },
+            {
+              "type": "doc",
+              "id": "version-0.1.0/features/feeds/design"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "✨ User Experience",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-0.1.0/product/onboarding"
+        },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/product/mobile_app"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "💾 Software",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-0.1.0/software/overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/software/packages"
+        },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/software/playground"
+        },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/software/provider"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "🏗 Subnet DAO",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-0.1.0/dao/overview"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "👨‍🎓 Learn More",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-0.1.0/resources"
+      }]
+      },
+      {
+        "type": "doc",
+        "id": "version-0.1.0/license"
+    }
+  ]
+}

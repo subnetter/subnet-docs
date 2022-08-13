@@ -1,0 +1,5 @@
+title: Public Channel Creation
+
+A  -> SA: CreatePubChannel(channelId, name, desc, receipt)
+SA -> SA: Sign ticket & store feed record, verify and store receipt
+SA --> A: ChannelId

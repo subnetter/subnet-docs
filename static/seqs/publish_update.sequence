@@ -1,0 +1,6 @@
+title: Publish a Status Update
+
+User A -> A: Author a new update in an owned channel c
+Note over A: For each B in channel c's subscribers list
+Note over A: ValidateSub(channel_id, B)
+A -> B: SendUpdate(channel_id, item_id)

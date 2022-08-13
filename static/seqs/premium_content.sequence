@@ -1,0 +1,13 @@
+title: Premium Content Publishing
+
+User A -> A: Author a premium content item
+Note over A: Store ContentItem
+A -> User A: item_id
+User A -> A: author update in a group or status update channel about content with item_id
+Note over A: Send user's status update in its channel
+User B -> B: Purchase content item
+Note over B: Execute payment transaction for the item
+B -> A: RequestItem(item_id, receipt)
+Note over A: Verify Receipt
+A -> B: SendItem(item)
+B -> User B: Display item in client

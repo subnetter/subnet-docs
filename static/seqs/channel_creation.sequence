@@ -1,0 +1,10 @@
+title: Status Updates Channel Creation
+
+User A -> A: Create Channel with info
+Note over A: Create Channel Bundle and Data
+A -> User B: advertise channel_id (any medium)
+User B -> B: Subscribe(channel_id)
+B -> A: Subscribe(channel_id)
+Note over A: Add B to subscribers list
+A --> B: Confirm(channel_id)
+B --> User B: Confirm Subscription

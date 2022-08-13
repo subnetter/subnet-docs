@@ -1,0 +1,13 @@
+title: Feeds Discovery
+
+participant B
+participant SB
+participant SA
+
+B -> SB: GetFeeds(A, receipt)
+
+Note over SB: USE KAD to find S(A) via Bundle(A, SA)
+
+SB -> SA: GetFeeds(A, B, receipt)
+SA --> SB: {feedInfo...}
+SB -> B: {feedInfo...}

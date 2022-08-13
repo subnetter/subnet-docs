@@ -1,0 +1,22 @@
+title: Collect Public Status Updates
+
+participant B
+participant SB
+participant SA
+
+B -> SB: Subscribe(A, feedId, receipt, sig)
+SB -> SB: StoreSub(B, A, feedId)
+SB --> B: feedId
+
+Note over SB: locate current SA via KAD(Bundle(A, SA))
+
+SB -> SA: Subscribe(B, A, feedId, bChan, sig)
+Note over SA: VerifyPouw(SB)
+SA --> SB: Ok
+
+Note over SB: Periodic
+SB -> SA: GetStatuses(feedId, t, bChan)
+Note over SA: VerifyPouw(SB)
+SA --> SB: {status...}
+# We maintain a feed per paying user
+SB -> SB: InsertToFeed(B, feedId, t, {status...})

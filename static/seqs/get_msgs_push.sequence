@@ -1,0 +1,12 @@
+title: Messages Delivery (Push Pattern)
+
+participant B
+participant SB
+
+B -> SB: SubscribeToClientMessages()
+Note over SB: New message(s) arrives...
+SB --> B: {msg_metadata...}
+Note over SB: L2Pay(SB, msgs_price)
+B -> SB: Receive({msg_id...}, receipt)
+SB --> B: {msg...}
+Note over SB: DeleteFromStore({msg...})

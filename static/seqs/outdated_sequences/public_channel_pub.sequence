@@ -1,0 +1,5 @@
+title: Public Status Update Publishing
+
+A  -> SA: PubUpdate(updateId, updateData, channelId, receipt)
+SA -> SA: StoreUpdate(channelId, t, updateData, updateId)
+SA --> A: Ok(updateId)
