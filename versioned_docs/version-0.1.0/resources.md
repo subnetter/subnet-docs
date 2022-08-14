@@ -1,14 +1,21 @@
 ---
 id: resources
-title: Subnet Resources
-sidebar_label: Subnet Resources
+title: Resources
+sidebar_label: Resources
 ---
 
-- [Intro Deck (v0.1.0 pdf)](/subnet_overview_0.1.0.pdf)
-- [Overview Deck (v0.1.0 pdf)](/subnet_overview_0.1.0.pdf)
-- [Product Deck (v0.1.0 pdf)](/subnet_product_overview_0.1.0.pdf)
-- [Interactive Prototype (v0.1.0 figma)](https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FV27rbpqCGSCXrGcrJFcOu1%2FSubnet%3Fnode-id%3D333%253A380%26scaling%3Dscale-down)
+This page contains this release's decks, videos and prototypes are available.
+
+## Decks
+- [Intro Deck](/release_distro_v0.1/subnet_intro.pdf)
+- [Overview Deck](/release_distro_v0.1/subnet_overview.pdf)
+- [Product Deck](/release_distro_v0.1/subnet_product.pdf)
+
+## Demos
+
+- [Mobile App Demo Video](/Upsetter_app_demo.mov)
+- [Mobile App Interactive Prototype](https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FV27rbpqCGSCXrGcrJFcOu1%2FSubnet%3Fnode-id%3D333%253A380%26scaling%3Dscale-down)
 
 
-## Subnet Protocol v0.1 Playground Video
+## Subnet Protocol Playground Video Demo
 [![asciicast](https://asciinema.org/a/W51QFvKxyFq64kOQJh2gVRqVL.svg)](https://asciinema.org/a/W51QFvKxyFq64kOQJh2gVRqVL)
