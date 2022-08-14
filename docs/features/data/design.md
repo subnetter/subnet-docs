@@ -14,10 +14,10 @@ Backed-up data is always strongly encrypted and is only accessible to the user w
 
 User can restore backed-up client data from his provider at any time. This enables use cases such as restoration of user's data when user switches to a new client device when he has no access to old data on his older client device.
 User can delete old shared data from his client at any time. This data will no longer be available to other users who still have access to it. This is useful when user is running out of storage space on his client device.
-Some content items shared over SNP between users are marked with a non-zero ttl by their authors. Clients automatically delete such data once the ttl expires. This helps reduce clients used storage size.
+Some content items shared over SUB between users are marked with a non-zero ttl by their authors. Clients automatically delete such data once the ttl expires. This helps reduce clients used storage size.
 
 ## Distributed Data Store
-Subnet includes a fully decentralized data store which is design to store public identity bundles, a ledger with users and providers coin balances and service terms. This data store is implemented in the `SNP Blockchain`. Bundles always have an expiration date, and the amount of data stored on the network is small even when it will have a large number of users, as bundles are small blobs of identity data and new bundles replace old ones.
+Subnet includes a fully decentralized data store which is design to store public identity bundles, a ledger with users and providers coin balances and service terms. This data store is implemented in the `SUB Blockchain`. Bundles always have an expiration date, and the amount of data stored on the network is small even when it will have a large number of users, as bundles are small blobs of identity data and new bundles replace old ones.
 
  Providers runs an Subnet Blockchain nodes and provides the `Subnet Blockchain Service public API`. Sybil attacks are mitigated due to a transaction fee associated with adding or updating data. Service providers pay transactions fee for new clients to make the onboarding experience smoother.
 

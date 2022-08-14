@@ -30,7 +30,7 @@ As part of routing, providers nodes store users messages on a temporary ttl-base
 Service Providers node also store encrypted user data that enable users to easily move from client to client and to migrate their account to another service provider.
 
 ### The Subnet Blockchain
-Each Service Provider entity runs at least one SNP blockchain p2p node. These nodes run a blockchain p2p protocol between them and reach agreement on an `immutable global shared state` via a consensus protocol. Service Providers nodes are configured to use a blockchains node for cryptocurrency and data related functionality. The Subnet blockchain maintain users and providers coin accounts balances, identity bundles and providers service terms. It supports different kind of tokens and the core $SNP cryptocurrency. The Subnet blockchain is a global replicated database that is updated by an honest majority of Subnet blockchain nodes. Anyone, without limitation, can run an SNP blockchain node and provide the 'Blockchain Service' to the network. In other words, the Sunnet Blockchain is permisionless.
+Each Service Provider entity runs at least one SUB blockchain p2p node. These nodes run a blockchain p2p protocol between them and reach agreement on an `immutable global shared state` via a consensus protocol. Service Providers nodes are configured to use a blockchains node for cryptocurrency and data related functionality. The Subnet blockchain maintain users and providers coin accounts balances, identity bundles and providers service terms. It supports different kind of tokens and the core $SUB cryptocurrency. The Subnet blockchain is a global replicated database that is updated by an honest majority of Subnet blockchain nodes. Anyone, without limitation, can run an SUB blockchain node and provide the 'Blockchain Service' to the network. In other words, the Sunnet Blockchain is permisionless.
 
 ### Bootstrap Nodes
 Bootstrap nodes are custom service providers nodes which are configured to provide public Subnet APIs to anyone. Bootstrap nodes do not provide non-public user-specific APIs as they do not provide specific network services to end-users. These are provided by service providers nodes. The public Subnet APIs enable users to locate service providers and to obtain data from the Subnet blockchain such as providers coin balances, users coin balances, users identity and providers identity.
@@ -63,7 +63,7 @@ Subnet replaces centralized managed network servers used in legacy internet serv
 ## Building Blocks
 
 ### Subnet Blockchain
-Subnet blockchain nodes run a distributed consensus protocol and agree on a canonical ledger between them. The simple ledger includes identity bundles, accounts $SNP coin and token balances. The ledger is where $SNP coin balances settle. For example, clients deposit funds to service providers by sending $SNP coin to provider's blockchain account via a blockchain transaction and preriodical users bills are settled on the SNP blockchain.
+Subnet blockchain nodes run a distributed consensus protocol and agree on a canonical ledger between them. The simple ledger includes identity bundles, accounts $SUB coin and token balances. The ledger is where $SUB coin balances settle. For example, clients deposit funds to service providers by sending $SUB coin to provider's blockchain account via a blockchain transaction and preriodical users bills are settled on the SUB blockchain.
 
 #### Account Model
 An account model is more appropiate for the subnet blockchain instead of UTXO model.
@@ -71,7 +71,7 @@ An account model is more appropiate for the subnet blockchain instead of UTXO mo
 > TODO detail support for `hash-locked accounts` - enabling the priority inbox app and deposits.
 
 ### Proof of Useful Work (PoUW)
-Subnet blockchain nodes use `proofs of useful work` (PoUW) when deciding how to act on messages that only other service providers send them according to SNP. This helps spam preventsion, storage waste and protocol abuse. Proof of useful work can be easily verified with on-chain data that provides evidence of good behavior and work according to the Subnet blockchain consensus protocol - e.g. blocks production, participation in consensus protocol over a period of time, and getting coin awards for honest useful behavior. In other words, service providers must run Subnet blockchain nodes and prove that to other providers when sending messages to them.
+Subnet blockchain nodes use `proofs of useful work` (PoUW) when deciding how to act on messages that only other service providers send them according to SUB. This helps spam preventsion, storage waste and protocol abuse. Proof of useful work can be easily verified with on-chain data that provides evidence of good behavior and work according to the Subnet blockchain consensus protocol - e.g. blocks production, participation in consensus protocol over a period of time, and getting coin awards for honest useful behavior. In other words, service providers must run Subnet blockchain nodes and prove that to other providers when sending messages to them.
 
 ### The X2DH Protocol
 Employed between 2 entities to exchange public keys used for creating shared secrets between entities which are further used to secure communications between entities.
@@ -80,5 +80,5 @@ We chose to use X2DH over X3DH as X3DH leaks message senders identity. X2DH enab
 :::
 
 ### The Double Ratchet Algorithm
-We employ a modifed version of the Double Ratchet algorithm to create secure communications channel between any to entities on the SNP network. Two entities use a 2XDH generated shared secret to create three chains of encryption keys which are used to secure messages between them: a root chain, a send chain and a receive chain. In addition, message headers are encrypted using header encryption.
+We employ a modifed version of the Double Ratchet algorithm to create secure communications channel between any to entities on the SUB network. Two entities use a 2XDH generated shared secret to create three chains of encryption keys which are used to secure messages between them: a root chain, a send chain and a receive chain. In addition, message headers are encrypted using header encryption.
 [todo: For more information... link to double-ratchet spec here...]

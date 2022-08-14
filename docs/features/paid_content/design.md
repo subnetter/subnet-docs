@@ -4,7 +4,7 @@ title: Paid Content
 sidebar_label: Design
 ---
 
-Users can publish premium content on the SNP network. Premium content can be any binary data such as a video clip or an audio clip or several files of any type bundled together in a compressed archive. e.g. a zip file.
+Users can publish premium content on the SUB network. Premium content can be any binary data such as a video clip or an audio clip or several files of any type bundled together in a compressed archive. e.g. a zip file.
 
 
 ### Content Item Publishing

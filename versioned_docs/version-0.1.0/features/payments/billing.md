@@ -75,7 +75,7 @@ Users must have an `effective terms of service` with their provider at all times
 
 ## The Pay-Per-Use Pricing Model
 
-Users are charged for network services by their providers in `Subnet Cryptocurrency` $SNP coins. When a user has a pay-per-use service agreement with its provider, he must include a signed `payment authorization` for the cost of one or more network operation with each SNP operation messages it sends to its provider when using the service. The prices should come from the user's `effective service terms` with its provider.
+Users are charged for network services by their providers in `Subnet Cryptocurrency` $SUB coins. When a user has a pay-per-use service agreement with its provider, he must include a signed `payment authorization` for the cost of one or more network operation with each SUB operation messages it sends to its provider when using the service. The prices should come from the user's `effective service terms` with its provider.
 
 `Payment Authorization` is a signed and dated payment commitment for a specific coin amount that references an operation or an item. For example, when a client wants to download several available messages from its provider, it prepares a service payment for the total delivery price of the messages and references the messages unique ids in the authorization. For additional details see the [sending messages](/) and [receiving messages](/) walkthroughs.
 
@@ -86,10 +86,10 @@ Note that by design, creating a service payment is simple, cheap and fast and do
 :::
 
 ### Balance
-`Balance` is an Subnet accounting concept used for charging users for receiving network services from their providers based on payment history, usage, and provider pricing. The balance is an $SNP coin amount. Each user has a balance with its Provider. Each user and provider maintain the balance for the user based on user's coin payment transactions to the provider and user signed charges.
+`Balance` is an Subnet accounting concept used for charging users for receiving network services from their providers based on payment history, usage, and provider pricing. The balance is an $SUB coin amount. Each user has a balance with its Provider. Each user and provider maintain the balance for the user based on user's coin payment transactions to the provider and user signed charges.
 
 :::info
-Each user's balance is equal to the total $SNP coins amount transferred by the user to its provider via blockchain transactions minus the total amount of provider's charges approved and signed by the user.
+Each user's balance is equal to the total $SUB coins amount transferred by the user to its provider via blockchain transactions minus the total amount of provider's charges approved and signed by the user.
 :::
 
 ### Minimum Balance
@@ -101,9 +101,9 @@ The minimum balance is used to periodically balance client charges. This feature
 Users need to pay providers via a cryptocurrency transaction to bring their account's balance up to the minimum balance when their account balance with the provider goes below the minimum balance due to new billable items.
 :::
 
-Providers may change the `minimum balance` requirement for a user based on that user's past service usage and changes in $SNP fiat pricing or on any other competitive consideration in the providers market. For example, heavy-usage users may be required to have a higher minimum balance than casual baseline users.
+Providers may change the `minimum balance` requirement for a user based on that user's past service usage and changes in $SUB fiat pricing or on any other competitive consideration in the providers market. For example, heavy-usage users may be required to have a higher minimum balance than casual baseline users.
 
-Due to the core $SNP currency likely price volatility and service providers competing with each other for users, it is likely that providers will also need to adjust the monthly prices of billable services, and the minimum balance required in order to remain competitive with other providers and to reflect $SNP price changes over time.
+Due to the core $SUB currency likely price volatility and service providers competing with each other for users, it is likely that providers will also need to adjust the monthly prices of billable services, and the minimum balance required in order to remain competitive with other providers and to reflect $SUB price changes over time.
 
 
 ### Users Accounting
@@ -113,7 +113,7 @@ Provider maintains payment data for each serviced user. The data includes:
 3. All blockchain payment transactions made by the user to the provider to maintain its balance.
 
 The user's `current balance` is computed based on user's payment authorizations (debits) and user blockchain payment to the provider as credits.
-For example, if user paid 10 $SNP via a blockchain transactions and signed payment authorizations with a total of 6 $SNP then its current balance is 4 $SNP.
+For example, if user paid 10 $SUB via a blockchain transactions and signed payment authorizations with a total of 6 $SUB then its current balance is 4 $SUB.
 
 :::info
 This design enables providers to update serviced users ledger efficiently, without having to perform an expensive blockchain transaction or a blockchain payment network operation, while users can't be overcharged for network services as all dated users bill items must be user-signed. Not having payments on a blockchain payment network avoid having to make security and privacy compromises.
@@ -125,7 +125,7 @@ Provider can trivially check at any time if the `current balance` gets close or 
 
 To start receiving service from a provider, user must to pay (via a blockchain transaction) an amount equal to double of the `minimum balance` amount and a `service registration` fee in the case that the provider's service term require it. This is designed so users start being serviced with a positive balance above the minimum balance.
 
-For example, if a provider minimum balance is 5 $SNP, then user pays 10 $SNP so its current free balance is 5 $SNP above the minimum at service start time.
+For example, if a provider minimum balance is 5 $SUB, then user pays 10 $SUB so its current free balance is 5 $SUB above the minimum at service start time.
 
 The basic idea is that user's balance should always be between double the minimum balance and the minimum balance. Users are also given sufficient time to pay providers for services even when their balance goes below the minimum balance but is still positive.
 
@@ -138,7 +138,7 @@ As soon as a user gets a `payment request` via its client, it should pay the pay
 
 In case that the user doesn't make the payment in a reasonable period of time and its current balance goes below 50% of the `minimum balance`, the provider is entitled to stop serving the user.
 
-This is designed to give users sufficient time to make a periodical payment to their providers without suffering service disruptions while making sure providers are paid for the network services they provide. Users can also configure their clients to make this payment automatically from a spending $SNP coins wallet as long as it is within user's set monthly budget for network services.
+This is designed to give users sufficient time to make a periodical payment to their providers without suffering service disruptions while making sure providers are paid for the network services they provide. Users can also configure their clients to make this payment automatically from a spending $SUB coins wallet as long as it is within user's set monthly budget for network services.
 
 This design ensures that there's only one blockchain transaction per user when his balance goes below the 25% threshold based on his actual paid provided services usage, regardless of the number of billed service operations between client and its provider, and the billing design is secure. This is important as we want to scale the Subnet platform to millions of users and minimize the number of required blockchain transactions per user while having a secure payments design.
 
@@ -220,7 +220,7 @@ TODO: outline dispute resolution smart contract system.
 ### Pay-per-use Model
 User terminates the service by simply not to paying its provider with a transaction for the next due monthly payment transaction. When this happens, the provider simply terminates the user's service at the end of the last day of the calendar month that the user paid for services for. There is no need for a dispute resolution mechanism in this model.
 
-It is the user's responsibility to enter a new service agreement with another provider that starts on the day in which the old service is terminated so the new provider may update the user's network public information (client identity bundle) on that date. Updating the client identity in the SNP Blockchain is required for other users clients to be able to communicate with the user and get content from its client via its new service provider.
+It is the user's responsibility to enter a new service agreement with another provider that starts on the day in which the old service is terminated so the new provider may update the user's network public information (client identity bundle) on that date. Updating the client identity in the SUB Blockchain is required for other users clients to be able to communicate with the user and get content from its client via its new service provider.
 
 ### Data Migration
 
@@ -248,20 +248,20 @@ If Subnet is going to provide real value to users, then the inconvenience of cre
 
 ## Pay per Use Model - The Happy Flow - A Concrete Example
 
-1. Provider SPA advertises a `minimum balance` requirement of 100 $SNP for new users in its service terms bundle. The bundle is publicly published on the Subnet blockchain.
+1. Provider SPA advertises a `minimum balance` requirement of 100 $SUB for new users in its service terms bundle. The bundle is publicly published on the Subnet blockchain.
 
-2. Client A selects SPA as its service provider and submits a blockchain transaction to it for 200 $SNP so its `current balance` is set to double of the minimum balance.
+2. Client A selects SPA as its service provider and submits a blockchain transaction to it for 200 $SUB so its `current balance` is set to double of the minimum balance.
 
 3. Client A uses the platform via SPA and send signed `payment authorizations` to SPA per the Subnet network protocol specs.
 
 4. Provider SPA stores the client's signed `payment authorizations`, and updates the client's balance based on the authorized amounts (debits).
 
-5. When user's `current balance` gets close to 100 $SNP due to ongoing usage charges, the provider sends the user's client a `payment request` message with a request to pay 100 $SNP to the provider and to bring the user's `current balance` back to the double of the `minimum balance`.
+5. When user's `current balance` gets close to 100 $SUB due to ongoing usage charges, the provider sends the user's client a `payment request` message with a request to pay 100 $SUB to the provider and to bring the user's `current balance` back to the double of the `minimum balance`.
 
-6. Client A sends Provider SPA a signed blockchain transaction for 100 $SNP and the
+6. Client A sends Provider SPA a signed blockchain transaction for 100 $SUB and the
 provider submits it to the blockchain via the Cryptocurrency Node it operates.
 
-7. When the transaction is confirmed, Provider SPA adds 100 $SNP to the user's current balance as credit.
+7. When the transaction is confirmed, Provider SPA adds 100 $SUB to the user's current balance as credit.
 
 8. Go to step 3.
 
@@ -283,6 +283,6 @@ This means that typical users will seldom need to execute an interactive blockch
 In this case, user needs to agree to increase the allowance and to pay the provider to increase its free balance. Another exception is that when provider increases free balance requirement and or feature pricing at a beginning of a month. In this case, user will need to explicitly approve the change of terms and potentially increase the allowance.
 
 ### The Happy Flow
-1. User specifies a monthly allowance amount for spending on network services. e.g. 100 $SNP.
+1. User specifies a monthly allowance amount for spending on network services. e.g. 100 $SUB.
 1. User's client automatically signs `payment authorizations` on behalf of user without user interactive intervention throughout the month while the total payment amount is below the monthly allowance amount.
 1. Client receives a request to update its balance from its provider, it executes the transaction if the request is below the monthly allowance amount without requiring user intervention.

@@ -17,7 +17,7 @@ This book describes the Subnet v0.1.0 platform. Read it to learn all about Subne
 ## TL;DR
 
 :::info What is Subnet?
-Subnet is a `highly-opinionated digital communications platform` with a focus on `strong privacy` and `users-control` for building `social media and communications apps` on top of a decentralized and incentivized software infrastructure, a native cryptocurrency using a new Internet protocol we call SNP - the `Subnet Network Protocol`.
+Subnet is a `highly-opinionated digital communications platform` with a focus on `strong privacy` and `users-control` for building `social media and communications apps` on top of a decentralized and incentivized software infrastructure, a native cryptocurrency using a new Internet protocol we call SUB - the `Subnet Network Protocol`.
 :::
 
 :::info What is Upsetter?
@@ -79,7 +79,7 @@ This section answers what apps and main features we aim to build.
 The problems outlined in the previous section have been outlined by many in the discourse around digital platforms. However - fixing these problems is hard and requires both a major conceptual switch and nontrivial disruptive enabling technologies and products.
 :::
 
-Subnet is an highly-opinionated design for a platform that solves this problem. The platform includes a new network protocol called SNP - `The Subnet Network Protocol`, a design for how servers, clients and end-user applications communicate with each other to enable communication network services in a brand new way.
+Subnet is an highly-opinionated design for a platform that solves this problem. The platform includes a new network protocol called SUB - `The Subnet Network Protocol`, a design for how servers, clients and end-user applications communicate with each other to enable communication network services in a brand new way.
 
 :::tip Imagine...
 Imagine a Whatsapp-like and a Twitter-like apps which are private, secure, 100% ads-free, censorship-free and tracking-free, built on top of a radically different decentralized open network infrastructure that is operating above the core Internet protocols in a scalable and highly incentive-compatible manner.
@@ -136,7 +136,7 @@ The platform is designed to be extendable to support additional apps such as onl
 ## How?
 
 :::info
-We aim to rebuild social media from the ground-up based on a new decentralized network protocol. We call it `The Subnet Network Protocol` aka `SNP`.
+We aim to rebuild social media from the ground-up based on a new decentralized network protocol. We call it `The Subnet Network Protocol` aka `SUB`.
 :::
 
 This section outlines the core platform architecture we are designing and building to enable the end-user communications apps.
@@ -159,7 +159,7 @@ A high-level view of the Subnet p2p network topology.
 The Subnet software platform has three main components:
 1. `Clients` - Users run client apps on their digital devices such as mobile phones, tables and desktop computers.
 2. `Service Providers Nodes` - Software which service providers run to provide services to users and to form a federation of service providers.
-3. `Subnet Network Protocol (SNP)` - A network protocol that defines the ALL communications between clients and providers and between providers.
+3. `Subnet Network Protocol (SUB)` - A network protocol that defines the ALL communications between clients and providers and between providers.
 
 Service providers is a federation of distinct entities which provide services to users and get compensated using cryptocurrency micro-payments and a pay-per-use business model.
 
@@ -169,7 +169,7 @@ Service providers compete with each other over users in a free market context ba
 
 Service providers do not have access to unencrypted users data and the roles they perform is mostly routing and storing of user's encrypted data.
 
-Service providers nodes are designed to run 24x7 in the cloud, communicate with each other using SNP, and provide `network services` for clients. They can be thought of as a new kind of web servers.
+Service providers nodes are designed to run 24x7 in the cloud, communicate with each other using SUB, and provide `network services` for clients. They can be thought of as a new kind of web servers.
 
 :::info
 Any user may move at-will from its current service provider to a new service provider with minimal service disruption.

@@ -77,7 +77,7 @@ The value and strength of the Subnet brand depends on the level of execution of 
 
 
 :::note
-There's a strong alignment of interest between all of these parties. This provides value to the service's native cryptocurrency. SNP Coins are going to be valuable if the service will be useful for a large number of people and financially profitable to network operators.
+There's a strong alignment of interest between all of these parties. This provides value to the service's native cryptocurrency. SUB Coins are going to be valuable if the service will be useful for a large number of people and financially profitable to network operators.
 :::
 
 In the future, commercial licenses for additional Subnet networks may be granted.

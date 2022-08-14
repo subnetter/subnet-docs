@@ -6,30 +6,30 @@ sidebar_label: Sending Messages
 
 ## Intro
 
-The Subnet Network Protocol (a.k.a SNP) is a message-oriented protocol built on-top of TCP/IP. A direct message is a 1:1 message sent from one entity (sender) to another entity (receiver) using the SNP network protocol. An entity is a `Service Provider Node` operated by a service provider, or a user's `client` running on his mobile device or computer. This document described how direct messages are sent in SNP.
+The Subnet Network Protocol (a.k.a SUB) is a message-oriented protocol built on-top of TCP/IP. A direct message is a 1:1 message sent from one entity (sender) to another entity (receiver) using the SUB network protocol. An entity is a `Service Provider Node` operated by a service provider, or a user's `client` running on his mobile device or computer. This document described how direct messages are sent in SUB.
 
-SNP doesn't make strong assumptions regarding clients Inetrnet connectivity. It is assumed that clients use mobile devices, may not be able to receive incoming TCP/IP connections requests, go offline and online often and frequently change their IP address. These assumptions is based on the actuall typical configuration and usage patterns of mobile devices.
+SUB doesn't make strong assumptions regarding clients Inetrnet connectivity. It is assumed that clients use mobile devices, may not be able to receive incoming TCP/IP connections requests, go offline and online often and frequently change their IP address. These assumptions is based on the actuall typical configuration and usage patterns of mobile devices.
 
-The core direct messaging algorithm described in this document is one of the fundamental networking algorithms in SNP. Many platform features and higher-level SNP algorithms utilize the core direct messaging algorithm. For example,  the `status updates` and the `group messaging` algorithms.
+The core direct messaging algorithm described in this document is one of the fundamental networking algorithms in SUB. Many platform features and higher-level SUB algorithms utilize the core direct messaging algorithm. For example,  the `status updates` and the `group messaging` algorithms.
 
-This is enabled by a design that specifies that the encrypted message payload sent between two parties using the core messaging algorithm is *an arbitrary communication protocol message* and not just a user-generated message. So, for example, a private direct message content may be an `instant message` from one user to another user, or any other kind of message in another higher-level SNP communication protocol between two users, such as status updates and group messages, between a user and its service provider, or between two service providers.
+This is enabled by a design that specifies that the encrypted message payload sent between two parties using the core messaging algorithm is *an arbitrary communication protocol message* and not just a user-generated message. So, for example, a private direct message content may be an `instant message` from one user to another user, or any other kind of message in another higher-level SUB communication protocol between two users, such as status updates and group messages, between a user and its service provider, or between two service providers.
 
 :::note
-SNP guarantees messages delivery to frequently-offline clients without compromising their privacy and security. This goal is achieved by the design of both the `message sending algorithm` and the `message receiving algorithm`. When done reading this document which describes the sending algorithm, head over and review the [Receiving Messages Algorithm](/docs/unp/receiving_msgs).
+SUB guarantees messages delivery to frequently-offline clients without compromising their privacy and security. This goal is achieved by the design of both the `message sending algorithm` and the `message receiving algorithm`. When done reading this document which describes the sending algorithm, head over and review the [Receiving Messages Algorithm](/docs/unp/receiving_msgs).
 :::
 
 The following algorithm describes the flow of `sending a message with arbitrary content from a user to another`. The sequence to send a message from any entity to another entity, such as between two services providers is very similar with some minor changes.
 
-The algorithm is a bit involved, but is necessary for SNP to meet its design goals regarding messages delivery, security, forward security, backward security, privacy and support for frequent-offline non-routable clients.
+The algorithm is a bit involved, but is necessary for SUB to meet its design goals regarding messages delivery, security, forward security, backward security, privacy and support for frequent-offline non-routable clients.
 
 > Subnet has built a prototype and a playground that demonstrate the capabilities, correctness and feasabiliity of the message sending and receiving algroithms.
 
 ## Overview
 
 ### Network Entities
-- `A` - Alice's SNP client app.
-- `B` - Bob's SNP client app.
-- `BNode` - SNP Bootstrap Node.
+- `A` - Alice's SUB client app.
+- `B` - Bob's SUB client app.
+- `BNode` - SUB Bootstrap Node.
 - `SA` - service provider node servicing A.
 - `SB` - service provider node servicing B.
 - `IKA` - A's public identity identifier.
@@ -49,7 +49,7 @@ A and B exchanged `IKA` and `IKB` between them. For example, via clients QR-code
 
 Both A and B have completed their own [network bootstrapping sequence](/features/onboarding/overview.md) with service providers nodes SA and SB respectively. So SA is A's service provider and SB is B's service provider and both A and B are serviced users.
 
-The algorithm uses a modified version of `X2DH` that doesn't rely on a centralized server to manage, certify, and publish users keys. Unlike the [X3DH protocol](https://signal.org/docs/specifications/x3dh/x3dh.pdf), the algorithm we use doesn't leak the initiating party's public identity. We employ this design for privacy reasons. SNP provides full two-party message authentication without revealing the message sender public id, using an alternative method which are described below.
+The algorithm uses a modified version of `X2DH` that doesn't rely on a centralized server to manage, certify, and publish users keys. Unlike the [X3DH protocol](https://signal.org/docs/specifications/x3dh/x3dh.pdf), the algorithm we use doesn't leak the initiating party's public identity. We employ this design for privacy reasons. SUB provides full two-party message authentication without revealing the message sender public id, using an alternative method which are described below.
 
 In this algorithm, A sends a first message to B. We assume that A and B didn't exchange messages between themselves previously on the network, so they don't have an existing `DR Session` between them. In other words, the sequence described here is the first message from A to B.
 
@@ -57,7 +57,7 @@ The first message from A to B is used to establish a virtual, secure, tow-party 
 
 Once X2DH and DR session initiation is executed by the parties, they each have DR key-chains that enable them to exchange any number of messages between themselves with good security properties such as forward and backward security. All messages between A and B are protected using one-time symmetric message keys. See the [DR algorithm paper](https://signal.org/docs/specifications/doubleratchet/doubleratchet.pdf) for background and additional details.
 
-The algorithm is also designed to ensure that each of SA and SB would not be able to determine individually or individually have evidence that A is messaging with B without attempting and succeeding to obtain information via a collusion outside of SNP.
+The algorithm is also designed to ensure that each of SA and SB would not be able to determine individually or individually have evidence that A is messaging with B without attempting and succeeding to obtain information via a collusion outside of SUB.
 
 Informally, *SA knows that A wants to send a message via SB, but it doesn't know the final message destination B. SB knows that a message was received via SA on behalf of one of its clients (or itself), and is designated to its client B. However, it doesn't know A's identity.* In addition, this is achieved without scarifying message authentication for A and B. B can verify that a message from A was authored by A, and A can verify from B was authored by B.
 
@@ -74,12 +74,12 @@ The actual message payload sent from A to B is in a higher-level network protoco
 ### Step 1 - A Gets B and SB Bundles
 A sends a `GetClientBundleId(B)` message to SA. The message is encrypted in a DR session between A and SA.
 
-> As an alternative, A can also obtain B's `Bundle(B, SB)` by quering any entity which provides the SNP public blockchain API such as community public SNP blockchain nodes or SNP bootstrap nodes. SNP bootstrap nodes all run SNP blockchain nodes.
+> As an alternative, A can also obtain B's `Bundle(B, SB)` by quering any entity which provides the SUB public blockchain API such as community public SUB blockchain nodes or SUB bootstrap nodes. SUB bootstrap nodes all run SUB blockchain nodes.
 
 ### Step 2 - SA returns Bundle(B, SB)
-When B started being serviced by SB, SB published `ProviderSignedClientIdentityBundle(SB, B)` to the SNP blockchain via a store client bundle transaction.
+When B started being serviced by SB, SB published `ProviderSignedClientIdentityBundle(SB, B)` to the SUB blockchain via a store client bundle transaction.
 
-SA queries the SNP blockchain to get `ProviderSignedClientIdentityBundle(SB, B)` and returns it to A. SA, and other service providers run an SNP blockchain node and so can read the requested data from their node's API. `ProviderSignedClientIdentityBundle(SB, B)` is stored on the SNP blockchain as part of the client's bootstrap process with thier service providers. So the data is already available to SA in its SNP blockchain global state and it doesn't need to use the network to obtain it.
+SA queries the SUB blockchain to get `ProviderSignedClientIdentityBundle(SB, B)` and returns it to A. SA, and other service providers run an SUB blockchain node and so can read the requested data from their node's API. `ProviderSignedClientIdentityBundle(SB, B)` is stored on the SUB blockchain as part of the client's bootstrap process with thier service providers. So the data is already available to SA in its SUB blockchain global state and it doesn't need to use the network to obtain it.
 
 ```protobuf
 // Provider published client bundle - includes provider signature on the data.
@@ -106,7 +106,7 @@ message ClientIdentityBundle {
 
 :::note
 A `ClientIdentityBundle` includes its current provider `ProviderIdentityBundle` and is signed by the client.
-The provider signs `ProviderSignedClientIdentityBundle` and `ProviderIdentityBundle`. So, when a client gets a `ProviderSignedClientIdentityBundle` it verifies the signatures to be assured that both client and provider data is authentic and that the client is serviced by the service provider. Bundles are stored in the SNP Blockchain.
+The provider signs `ProviderSignedClientIdentityBundle` and `ProviderIdentityBundle`. So, when a client gets a `ProviderSignedClientIdentityBundle` it verifies the signatures to be assured that both client and provider data is authentic and that the client is serviced by the service provider. Bundles are stored in the SUB Blockchain.
 :::
 
 :::tip
@@ -124,7 +124,7 @@ A prepares a message to B to be sent to it via SA and SB. A creates a message wh
 Let's assume that the message is the text message `Hi Bob, this is Alice`. The clients agree and implement an `application-level message type` for a `text-messaging protocol` which includes a simple message type that contains the sender's text. This message is encoded to binary data and A creates a `TypedMessage` for it using the following syntax:
 
 :::note
-`Typed Message` is a self-described message in a specific protocol, designated to a specific receiver, where all data is attested by by the sender. It enables dynamic decoding of a protobuf encoded messages to a specific runtime type which is needed because `protobuf 3`, which SNP uses to define RPC messages and service, does not support self-describing messages.
+`Typed Message` is a self-described message in a specific protocol, designated to a specific receiver, where all data is attested by by the sender. It enables dynamic decoding of a protobuf encoded messages to a specific runtime type which is needed because `protobuf 3`, which SUB uses to define RPC messages and service, does not support self-describing messages.
 :::
 
 ```protobuf
@@ -271,13 +271,13 @@ Note that only SB public info, and an ephemeral public key are visible to SA. Al
 It is expected that both SA and SB serve many hundreds or even thousands of clients such as A and B and not just A and B. So deciding that a message sent from SA to SB is on behalf of A and is designated to B is informally hard and requires collusion between SA and SB. Also note that the platform's core security assumption is an honest majority of full nodes which not collude to reduce the privacy of client messages.
 
 This X2DH part of the algorithm is in some ways similar to Telegram and Signal use of the X3DH protocol
-The main difference is that in SNP `there is no central server that is used for the initial key exchange` and the distributed permissionless p2p nodes SA and SB are used instead. In Signal and Telegram, X3DH bundles are stored on a centralized server operated by one company. The server operator knows about every user request to communicate with another user and can also censor some users from having their keys available to anyone (or to a sub-group) of other users.
+The main difference is that in SUB `there is no central server that is used for the initial key exchange` and the distributed permissionless p2p nodes SA and SB are used instead. In Signal and Telegram, X3DH bundles are stored on a centralized server operated by one company. The server operator knows about every user request to communicate with another user and can also censor some users from having their keys available to anyone (or to a sub-group) of other users.
 
-Im SNP, there's also `no central server that knows that a message M is sent between A and B`. Obtaining such knowledge requires obtaining meta-data from both SA and SB.
+Im SUB, there's also `no central server that knows that a message M is sent between A and B`. Obtaining such knowledge requires obtaining meta-data from both SA and SB.
 
 Unlike Signal and Whatsapp, messages cleartext sent over the Internet doesn't include the sender's identity (as required by the X3DH protocol), so much less meta-data about the sender is available for men in the middle.
 
-SNP design also makes proxying message exchanged between A and B via a server in the case that both of them are not-routable unnecessary. In the case of a proxy, it has full information regarding the identity of conversing parties, the number of exchanged messages, and time of each message exchanged between the two users.
+SUB design also makes proxying message exchanged between A and B via a server in the case that both of them are not-routable unnecessary. In the case of a proxy, it has full information regarding the identity of conversing parties, the number of exchanged messages, and time of each message exchanged between the two users.
 
 ---
 

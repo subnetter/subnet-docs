@@ -4,14 +4,14 @@ title: Identity Bundles
 sidebar_label: Identity Bundles
 ---
 
-Identity bundles are self-signed certificates of identity extensively used in SNP. They are the fundamental data structures used in Subnet's decentralized identity system.
+Identity bundles are self-signed certificates of identity extensively used in SUB. They are the fundamental data structures used in Subnet's decentralized identity system.
 
 Service providers publish their identity bundles to enable clients and other service providers to securely communicate with them and to authenticate message they get from them. Clients use identity bundles to advertise their service provider and their identity on the network.
 
-There is no central server that stores bundles and no root certificates. Bundles are distributed over the network and any entity on the network can locate bundles based on public information such as entity's identity key. Bundles only contain public information that enables network entities to securely and privately communicate with them using SNP.
+There is no central server that stores bundles and no root certificates. Bundles are distributed over the network and any entity on the network can locate bundles based on public information such as entity's identity key. Bundles only contain public information that enables network entities to securely and privately communicate with them using SUB.
 
 :::note
-Bundles are stored on SNP blockchain. This guarantees that at any time, any client or provider is able to obtain any other client or provider bundle from the network without relying on a central domain name authority. In addition, the SNP blockchain provides censorship-free store. As long as there's at least one honest validator, providers and clients can't be blocked from publishing their identiity to SNP by any party.
+Bundles are stored on SUB blockchain. This guarantees that at any time, any client or provider is able to obtain any other client or provider bundle from the network without relying on a central domain name authority. In addition, the SUB blockchain provides censorship-free store. As long as there's at least one honest validator, providers and clients can't be blocked from publishing their identiity to SUB by any party.
 :::
 
 - `ProviderIdentityBundle` is a certificate created and published by a service provider to announce its identity, additional public key and network dial-up info.
@@ -75,7 +75,7 @@ message ProviderSignedClientIdentityBundle {
 
 ## Obtaining Providers and Client Bundles
 
-Service providers operate SNP blockchain full nodes which have access to all data stored on the SNP blockchain. This data includes published identity bundles.
+Service providers operate SUB blockchain full nodes which have access to all data stored on the SUB blockchain. This data includes published identity bundles.
 
 Service providers operate `service providers nodes` which are online 24x7 on the network. Their nodes provide a public-service api for getting their signed bundles. So, to obtain a any published client or provider signed public bundle, a client or node needs only need to know its public service api dialup info.
 
@@ -85,7 +85,7 @@ Service providers sign publish the identity bundles of their clients based on cl
 
 ```protobuf
 // Subnet blockchain service.
-// This service is provided to anyone by any provider or public SNP blockchain api provider.
+// This service is provided to anyone by any provider or public SUB blockchain api provider.
 // Using this service, any entitiy can obtain the identity of any client or provider on the network.
 service BlockchainService {
 

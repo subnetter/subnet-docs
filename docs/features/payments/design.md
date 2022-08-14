@@ -4,9 +4,9 @@ title: Cryptocurrency Payments Design
 sidebar_label:  Design
 ---
 
-### Base Coin - $SNP
+### Base Coin - $SUB
 
-The Subnet platform uses its own native cryptocurrency $SNP.
+The Subnet platform uses its own native cryptocurrency $SUB.
 
 The native cryptocurrency is awarded to servers for maintaining the core platform's ledger and other services. Service provider nodes (who don't opt-out) participate in permissionless consensus protocol to agree on a core platform's cryptocurrency ledger.
 
@@ -20,7 +20,7 @@ Service Providers operate a blockchain network between them called the `Subnet B
 Providers run `CryptoCurrency Nodes` to maintain the blockchain. Cryptocurrency node are blockchain p2p full nodes.
 
 :::info 0.1.0 Release Note
-Subnet Blockchain's ledger supports only the core cryptocurrency ($SNP). This release doesn't support a stable decentralized currency, custom tokens or an L2 payment network. These features will be added in future releases. Our long-term roadmap is for users to use stable coins and not a volatile cryptocurrency for payments to providers and to other users.
+Subnet Blockchain's ledger supports only the core cryptocurrency ($SUB). This release doesn't support a stable decentralized currency, custom tokens or an L2 payment network. These features will be added in future releases. Our long-term roadmap is for users to use stable coins and not a volatile cryptocurrency for payments to providers and to other users.
 :::
 
 :::tip
@@ -68,7 +68,7 @@ A proof obtained by using the Blockchain API that includes a list of the most re
 ## Blockchain Transactions Summary - Release v0.1.0
 
 ### Onetime Transactions
-1. One transaction per user on-ramp from $SNP seller to create user's on-chain account.
+1. One transaction per user on-ramp from $SUB seller to create user's on-chain account.
 1. One transaction with credit from service provider when switching a service provider.
 
 ### Reoccurring Transactions

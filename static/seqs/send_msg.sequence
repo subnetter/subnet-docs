@@ -5,7 +5,7 @@ participant SA
 participant SB
 
 A -> SA: GetClientBundleId(B)
-Note over SA: Query SNP Blockchain for the data
+Note over SA: Query SUB Blockchain for the data
 SA -> A: Bundle(B, SB)
 
 Note over A: Store(B, Bundle(B, SB))

@@ -5,7 +5,7 @@ sidebar_label: 🗼 Service Providers
 ---
 
 ### Service Providers Platform Software
-The Subnet platform is provided to users by a federation of permission-less service providers. Each service provider run service providers software that implements the Subnet Network Protocol (SNP).
+The Subnet platform is provided to users by a federation of permission-less service providers. Each service provider run service providers software that implements the Subnet Network Protocol (SUB).
 
 :::info
 Each provider needs to configure run two processes on one or more computers. A `Service Provider Node` and a `Cryptocurrency Node`.
@@ -14,7 +14,7 @@ Each provider needs to configure run two processes on one or more computers. A `
 ### Service Provider Node
 Service Providers Nodes implements Subnet Network Protocol for the provider. Clients of users serviced by this provider, and other service providers connect to this node over the Internet. Provider needs to properly configure the node according to its service terms and run this node 24x7 with sufficient network, storage and computing resources.
 
-Service Provider Nodes are permissionless. Anyone can run them without limitation, however, service providers should participate in the Subnet cryptocurrency and payment network to be able to provide service to clients according to rules set in SNP. Clients should not chose service providers who can't prove participation in subnet consensus mechanisms. (see PoUW section below).
+Service Provider Nodes are permission-less. Anyone can run them without limitation, however, service providers should participate in the Subnet cryptocurrency and payment network to be able to provide service to clients according to rules set in SUB. Clients should not chose service providers who can't prove participation in subnet consensus mechanisms. (see PoUW section below).
 
 :::info
 Service Provider Node should to be configured to use the provider's cryptocurrency node as its cryptocurrency API provider.
@@ -23,7 +23,7 @@ Service Provider Node should to be configured to use the provider's cryptocurren
 ### Cryptocurrency Node
 Cryptocurrency nodes maintain the Subnet public ledger and payment network. Nodes provide the `Subnet Cryptocurrency API` to api clients.
 
-Cryptocurrency Nodes are permissionless - anyone can run them without any limitation. Cryptocurrency Nodes get block mining and validation rewards.
+Cryptocurrency Nodes are permission-less - anyone can run them without any limitation. Cryptocurrency Nodes get block mining and validation rewards.
 
 ---
 
@@ -46,9 +46,9 @@ Implements the blockchain protocol. This includes a canonical ledger, and a cons
 Manages cryptographic key-pairs for users and enables them to sign transactions and payment requests.
 
 ### Proofs of useful Work (POuW)
-Blockchain nodes perform different roles to maintain the ledger and the payment network such as participating in the blockchain consensus protocol and validating payment network payments. The nodes are rewarded with $SNP for this participation. The ledger consensus includes proofs of nodes participation in these protocols. We call these proofs `Proofs of Useful Work`.
+Blockchain nodes perform different roles to maintain the ledger and the payment network such as participating in the blockchain consensus protocol and validating payment network payments. The nodes are rewarded with $SUB for this participation. The ledger consensus includes proofs of nodes participation in these protocols. We call these proofs `Proofs of Useful Work`.
 
-According to SNP (Subnet Network Protocol) Service Providers need to present these proofs for new users and to other service providers.
+According to SUB (Subnet Network Protocol) Service Providers need to present these proofs for new users and to other service providers.
 
 For example, service providers only accept some provider-to-provider protocol messages from other service providers who they can verify to have performed some level of useful work for the platform. This mitigates sybil attacks on the network and minimized the damage that fraudulent service providers can cause to the Subnet network.
 

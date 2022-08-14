@@ -14,7 +14,7 @@ A built-in free market mechanism in which service providers compete with each-ot
 Users pay a `nano-fee` to send messages to and to receive messages from service providers which provide them with message routing and storage services. This helps mitigating spam as there's a cost for every client message and published data. These costs should cover servie providers operational costs and make the network sustainable without falling back to toxic private personal data sales or advertising business models.
 
 ### Incentive Compatibility
-Service providers are incentivized to provide clients with services and to behave according to the SNP network protocol and not deviate from it. As servie providers are paid by clients for services, per action performed, they have a strong incentive to provide the service as clients are always free to replace them with another service provider available on the network. Incentive-compatibility helps to achieve sustainability.
+Service providers are incentivized to provide clients with services and to behave according to the SUB network protocol and not deviate from it. As servie providers are paid by clients for services, per action performed, they have a strong incentive to provide the service as clients are always free to replace them with another service provider available on the network. Incentive-compatibility helps to achieve sustainability.
 
 ### Decentralized Identities
 The major vulnerability in all digital communication systems is identity. Subnet aims to build a decentralized identity system where the security model does not depend on root certificate authorities, or on trust in any one company / authority. We aim to replace DNS and TLS/SSL with better modern decentralized alternatives. In Subnet, users are 100% in control of their identity and personal data.
@@ -37,7 +37,7 @@ Beyond anonymity, Subnet aims to provide strong privacy guarantees by making it 
 Subnet enables instant cryptocurrency payments between any two people or entities in the world without any exceptions. As long as a client can connect to the Internet and to at least one honest service provider, it can pay or get paid by any other user or entity on the network without requiring any third party involvement or authorization.
 
 ### Robustness
-Subnet is designed in a way that enables a full range of end-user communications and social media apps to be in a straightforward way. In other words, Snp protocol is an open low-level digital communications protocol which is designed to enable a wide-range of communications patterns and apps.
+Subnet is designed in a way that enables a full range of end-user communications and social media apps to be in a straightforward way. In other words, SUB protocol is an open low-level digital communications protocol which is designed to enable a wide-range of communications patterns and apps.
 
 ### Scalability
 Subnet is designed to enable communications and social media apps to hundreds of millions of people and entities. Its decentralized design of federated service providers is highly-scalable. We envision thousands of service providers on the Subnet network.
