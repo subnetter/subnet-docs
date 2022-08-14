@@ -181,8 +181,6 @@ This is a core Subnet design principle that was established to prevent the creat
 
 ## Additional Resources
 
-[Subnet Overview Deck](/subnet_overview_0.1.0.pdf)
-
 For all inquiries email cmwebdev@pm.me.
 
 ----

@@ -66,12 +66,12 @@ Subnet replaces centralized managed network servers used in legacy internet serv
 Subnet blockchain nodes run a distributed consensus protocol and agree on a canonical ledger between them. The simple ledger includes identity bundles, accounts $SNP coin and token balances. The ledger is where $SNP coin balances settle. For example, clients deposit funds to service providers by sending $SNP coin to provider's blockchain account via a blockchain transaction and preriodical users bills are settled on the SNP blockchain.
 
 #### Account Model
-An account model is more appropiate for the subnet blockchain instead of UTXO model.
+An account model is more appropriate for the subnet blockchain instead of UTXO model.
 
 > TODO detail support for `hash-locked accounts` - enabling the priority inbox app and deposits.
 
 ### Proof of Useful Work (PoUW)
-Subnet blockchain nodes use `proofs of useful work` (PoUW) when deciding how to act on messages that only other service providers send them according to SNP. This helps spam preventsion, storage waste and protocol abuse. Proof of useful work can be easily verified with on-chain data that provides evidence of good behavior and work according to the Subnet blockchain consensus protocol - e.g. blocks production, participation in consensus protocol over a period of time, and getting coin awards for honest useful behavior. In other words, service providers must run Subnet blockchain nodes and prove that to other providers when sending messages to them.
+Subnet blockchain nodes use `proofs of useful work` (PoUW) when deciding how to act on messages that only other service providers send them according to SNP. This helps spam prevension, storage waste and protocol abuse. Proof of useful work can be easily verified with on-chain data that provides evidence of good behavior and work according to the Subnet blockchain consensus protocol - e.g. blocks production, participation in consensus protocol over a period of time, and getting coin awards for honest useful behavior. In other words, service providers must run Subnet blockchain nodes and prove that to other providers when sending messages to them.
 
 ### The X2DH Protocol
 Employed between 2 entities to exchange public keys used for creating shared secrets between entities which are further used to secure communications between entities.

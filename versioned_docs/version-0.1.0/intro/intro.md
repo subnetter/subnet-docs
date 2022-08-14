@@ -181,9 +181,12 @@ This is a core Subnet design principle that was established to prevent the creat
 
 ## Additional Resources
 
-[Subnet Overview Deck](/subnet_overview_0.1.0.pdf)
+- [Subnet Intro (pdf)](/release_distro_v0.1/subnet_intro.pdf)
+- [Subnet Overview (pdf)](/release_distro_v0.1/subnet_overview.pdf)
+- [Subnet Product Overview (pdf)](/release_distro_v0.1/subnet_product.pdf)
+- [Subnet Protocol Deep Dive (pdf)](/release_distro_v0.1/subnet_deep_dive.pdf)
 
-For all inquiries email cmwebdev@pm.me.
+For all inquiries email subnetter@pm.me.
 
 ----
 
