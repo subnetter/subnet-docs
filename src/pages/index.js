@@ -85,7 +85,7 @@ function Home() {
   return (
     <Layout
       title={`Welcome to ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Subnet is a web3 communications platform">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <img className={styles.bannerLogo} src={'logo_icon_black_trans.svg'}/>
@@ -97,7 +97,7 @@ function Home() {
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>
-              Get Started
+              Read the Subnet Book
             </Link>
           </div>
         </div>

@@ -1,12 +1,18 @@
 ---
 id: intro
-title: Introducing Subnet
+title: The Subnet Book - Intro
 sidebar_label: Introducing Subnet
 slug: /
 ---
 
 | ![](/mobile_app_screens/welcome.png)   	|   ![](/mobile_app_screens/identity.png)	|   ![](/mobile_app_screens/apps.png)	| ![](/mobile_app_screens/intro.png) |
 |---	|---	|---	|---	|
+
+
+## Welcome to Subnet
+Welcome to the intro of the Subnet book. We are glad to see you here.
+This book describes the Subnet v0.1.0 platform. Read it to learn all about Subnet.
+
 
 ## TL;DR
 
