@@ -4,6 +4,9 @@ title: Project Funding
 sidebar_label: Overview
 ---
 
+## The Subnet DAO
+The Subnet DAO is an organization that governs the development of the Subnet community and project. If you are interested in contributing to the Subnet project then we recommend you'll join the DAO. Please email subnetter@pm.me if you are interested in joining. We are going to publish more information about the Subnet DAO here.
+
 ## The Subnet Company
 The Subnet private company is a development company set up to oversea development of the project until first platform public launch. The company will issue equity to accredited investors and investors will purchase rights for $SNP coins at genesis time as part of their investment in the company.
 
