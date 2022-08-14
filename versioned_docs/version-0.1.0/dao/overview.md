@@ -18,8 +18,8 @@ Entities and organizations that would like to become Service Providers on the Su
 
 ### SUB Coins ($SUB)
 - Total supply: 100,000,000 Coins.
-- Pre-minted: 25,000,000 coins (25% of supply) - allocated for platform development, grants and DOA members.
 - The coin is created on the public launch of the Subnet public platform which includes the Subnet blockchain.
+- Pre-minted: 25,000,000 coins (25% of supply) - allocated for platform development, grants and DOA members.
 - Platform rewards: 75,000,000 coins (75% of supply). Coins will be minted as mining and validators rewards over 20 years from platform launch to entities which run service providers nodes and Subnet blockchain nodes.
 
 ### Subnet Stable Coin ($SSC)
