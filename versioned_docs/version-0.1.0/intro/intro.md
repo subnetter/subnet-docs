@@ -10,8 +10,8 @@ slug: /
 
 
 ## Welcome to Subnet
-Welcome to the intro of the Subnet book. We are glad to see you here.
-This book describes the Subnet v0.1.0 platform. Read it to learn all about Subnet.
+We are glad to see you here! Subnet is a web3 social media platform.
+This book describes the Subnet platform. Subnet is an opinionated project with specific concrete values. This book outlines these values as well as the software design of the platform that was established to facilitate these values in practice.
 
 
 ## TL;DR
