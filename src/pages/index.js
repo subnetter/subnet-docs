@@ -49,7 +49,7 @@ const features = [
     imageUrl: 'logo_basic_var6_white.png',
     description: (
       <>
-        Clear and strong project values about identity, censorship, moderation, users privacy and users rights drive all the platform's design desicions so users interestes and considirations are always first. By design, no company can put its interest above the user's.
+        Clear and strong project values about identity, censorship, moderation, users privacy and users rights drive all the platform's design decisions so users interests and considirations are always first. By design, no company can put its interest above the user's.
       </>
     ),
   },
@@ -88,7 +88,7 @@ function Home() {
       description="Subnet is a web3 communications platform">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <img className={styles.bannerLogo} src={'logo_icon_black_trans.svg'}/>
+          <img  alt='Subnet logo' className={styles.bannerLogo} src={'logo_icon_black_trans.svg'}/>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
