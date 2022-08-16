@@ -41,11 +41,11 @@ module.exports = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/',
+              href: 'https://discord.gg/SBUd85xNf9',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/',
+              href: 'https://twitter.com/Subnet_platform',
             },
           ],
         },
