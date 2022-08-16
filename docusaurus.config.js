@@ -47,6 +47,10 @@ module.exports = {
               label: 'Twitter',
               href: 'https://twitter.com/Subnet_platform',
             },
+            {
+              label: 'Telegram',
+              href: 'https://t.me/subnetdao',
+            },
           ],
         },
         {
