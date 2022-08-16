@@ -29,14 +29,14 @@ Subnet network services are not provided by a company or an organization that is
 
 ---
 
-#### Insight #4: Regulation is not the answer
+#### Insight #3: Regulation is not the answer
 Regulation is proposed by many as the best way we have to solve problem with present-day online communications platforms. National and international regulation as a solution to the social networks great harm to humanity can't by-itself solve the problem. Regulating service providers that employ harmful business models is only a mitigating half-measure. A decentralized social network with strong privacy preserving design principle that gives users a viable alternative is key.
 
-#### Insight #5: Some people don't to subsidize their online communications costs by sale of their data and metadata
+#### Insight #4: Some people don't to subsidize their online communications costs by sale of their data and metadata
 
 Subnet aims to become a platform where users strongly control who has access to the data they create and publish. There is no option for service providers to obtain and sell users data. Subnet is designed to appeal to this market segment and to provide it an alternative for paying for digital services. In a world of 4 billions of people online, 'some' may apply to hundreds of millions of people worldwide.
 
-#### Insight #6: Privacy and user data ownership is the moat
+#### Insight #5: Privacy and user data ownership is the moat
 It will be extremely difficult for the current public digital service providers companies to switch to a privacy-first business model due to vast majority of their revenue derived from abusing users privacy and a corporate mandate to maximize shareholders value and not users value. Public companies are prisoners of their cash cows and corporate mandate.
 
 ---
