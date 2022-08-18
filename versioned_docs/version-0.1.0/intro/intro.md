@@ -10,7 +10,7 @@ slug: /
 
 
 ## Welcome to Subnet
-We are glad to see you here! Subnet is a web3 social media platform.
+You found us! Welcome home. We are glad to see you here! Subnet is a web3 social media platform.
 This book describes the Subnet platform. Subnet is an opinionated project with specific concrete values. This book outlines these values as well as the software design of the platform that was established to facilitate these values in practice.
 
 

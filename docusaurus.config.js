@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Subnet',
-  tagline: 'A Decentralized Communications Platform',
+  tagline: 'A Decentralized Web3 Social Media Platform',
   url: 'https://subnet.wtf',
   baseUrl: '/',
   onBrokenLinks: 'throw',
