@@ -15,6 +15,10 @@
         },
         {
           "type": "doc",
+          "id": "version-0.1.0/intro/commandments"
+        },
+        {
+          "type": "doc",
           "id": "version-0.1.0/intro/bizmodel"
         },
         {
