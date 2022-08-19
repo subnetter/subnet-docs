@@ -17,7 +17,7 @@ Subnet is a highly-opinionated project with very clear values. This page lists t
 
 4. A social media platform should not be able to censor or de-platform anyone from it for whatever reason.
 
-### Pyaments
+### Payments
 5. A social media platform's users must be able to easily migrate between service providers without experiencing service disruption.
 
 6. Social media service providers should be free to offer any pricing model to users such as ad-based, pay-per-byte delivered, pay-per-byte of stored user's content. The pricing model for network services should be determined in an open market of service providers. Users should only be billed with what they agreed to pay.
