@@ -21,7 +21,7 @@ Learn more about Subnet by reading some of our intro decks.
 ## Demos
 
 ### Upsetter Mobile App Demo
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/y8wWDaxMEY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/D04k6BlFowc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Upsetter Mobile App Interactive Prototype
 

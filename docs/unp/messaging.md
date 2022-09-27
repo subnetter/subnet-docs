@@ -258,7 +258,7 @@ For additional information about the final message delivery, please see [Receivi
 
 Conceptually the message A sends to SA has the following structure.
 
-<img style={{width: '75%'}} src='/static/direct_message_structure.png'/>
+<img style={{width: '75%'}} src='static/direct_message_structure.png'/>
 <br/>
 <br/>
 
