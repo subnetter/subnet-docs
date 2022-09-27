@@ -25,7 +25,7 @@ Learn more about Subnet by reading some of our intro decks.
 
 ### Upsetter Mobile App Interactive Prototype
 
-[Mobile App Interactive Prototype (figma)](https://www.figma.com/proto/V27rbpqCGSCXrGcrJFcOu1/Upsetter?embed_host=share&kind=&node-id=333%3A1&scaling=scale-down&starting-point-node-id=333%3A1&hide-ui=1)
+[Mobile App Interactive Prototype (figma)](https://www.figma.com/proto/V27rbpqCGSCXrGcrJFcOu1/Upsetter?node-id=333%3A1&starting-point-node-id=333%3A1)
 
 
 ## Subnet Protocol Playground Video Demo

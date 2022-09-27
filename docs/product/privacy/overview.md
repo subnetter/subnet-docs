@@ -24,7 +24,7 @@ Under these assumptions, in the worse case of 1/3 malicious service providers, a
 In this new schema of things, `don't be evil` is still applicable but changes from being a requirement for a service provider corporation to a collective requirement from an open group of service providers. Network's which claim `can't be evil` are dishonest regarding the fundamental fact that in a permissionless network, a large enough minority of nodes can always be evil by subverting from the protocol.
 
 :::note
-The Subnet protocol does provide `can't be evil` guarantees regarding other aspects of the network such as users billing according to agreed upon service terms and unlike centralized systems that promise the won't be evil, but still lock-in the users to them and are free to change their terms without notice and at any time, the protocol is designed so users in a Subnet network will be able to exchange their network service provider with another one at any time with minimal service disruptions.
+The Subnet protocol provides `can't be evil` guarantees regarding other aspects of the network such as users billing according to agreed upon service terms and unlike centralized systems that promise the won't be evil, but still lock-in the users to them and are free to change their terms without notice and at any time, the protocol is designed so users in a Subnet network will be able to exchange their network service provider with another one at any time with minimal service disruptions.
 :::
 
 ## Users Identity Privacy

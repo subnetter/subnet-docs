@@ -1,4 +1,4 @@
-    ---
+---
 id: design
 title: Priority Inbox
 sidebar_label: Design

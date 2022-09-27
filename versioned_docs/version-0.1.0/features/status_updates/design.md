@@ -164,13 +164,15 @@ message NewChannelMessage {
 }
 ```
 
-?> It is 100% up to the user to share personal information in the channel's display name or description or via his friendly nickname advertised via X2DH. For example, a user can choose not to share any such personal information. So, the decision to be anonymous is left to the user and is not in the hands of the service provider.
+It is 100% up to the user to share personal information in the channel's display name or description or via his friendly nickname advertised via X2DH. For example, a user can choose not to share any such personal information. So, the decision to be anonymous is left to the user and is not in the hands of the service provider.
 
-?> Note that unlike Twitter, each human or AI user (who runs and controls A) may publish more than one public feed so they can represent themselves differently to different communities. For example, A may be a DJ but also a software developer. He may chose to share music related updates in his DJ feed and software related updates in a software feed. B might be interested in A's music updates but not in his musings on software... A's user may or may not associate any personally identifying information with these feeds.
+:::info
+Note that unlike Twitter, each human or AI user (who runs and controls A) may publish more than one public feed so they can represent themselves differently to different communities. For example, A may be a DJ but also a software developer. He may chose to share music related updates in his DJ feed and software related updates in a software feed. B might be interested in A's music updates but not in his musings on software... A's user may or may not associate any personally identifying information with these feeds.
+:::
 
-?> Note that there's a built-in support for premium channels which require monthly subscription fee from subscribers. The platform also supports premium pay-per-content model for premium content shared via a channel.
+Note that there's a built-in support for premium channels which require monthly subscription fee from subscribers. The platform also supports premium pay-per-content model for premium content shared via a channel.
 
-?> Note that channel bundles support both groups and status updates scenarios.
+Note that channel bundles support both groups and status updates scenarios.
 
 ----
 
@@ -197,7 +199,9 @@ message NewChannelMessage {
 User A authors a status update in channel c, on A.
 For each subscriber B to channel c, A validates subscription is valid (for example, B may have not pay a monthly subscription fee) and sends the update to each valid subscriber B.
 
-?> This is a high-level flow, lower-level details are that the update is sent to B via SB using the core messaging algorithm. Note that each update is encrypted using forward secrecy in a double ratchet session between A and B and SA and SB can't read the content of the update or even tell it is a status update in channel c. From a messaging perspective, the update looks like any other message from A to B. SA knows A wants to send SB a message but not B's identity. SB knows that A wants to send a message to B but not the content of the message or the channel id or other meta-data.
+:::info
+This is a high-level flow, lower-level details are that the update is sent to B via SB using the core messaging algorithm. Note that each update is encrypted using forward secrecy in a double ratchet session between A and B and SA and SB can't read the content of the update or even tell it is a status update in channel c. From a messaging perspective, the update looks like any other message from A to B. SA knows A wants to send SB a message but not B's identity. SB knows that A wants to send a message to B but not the content of the message or the channel id or other meta-data.
+:::
 
 ---
 
@@ -212,13 +216,13 @@ User B submits the reply content to B. e.g. he enters reply's text.
 
 B sends the reply to A using `SendReply`. It provides the channel id and the content item that his reply is about.
 
-?> The `SendReply` message is sent using the core messaging algorithm between two clients.
+> The `SendReply` message is sent using the core messaging algorithm between two clients.
 
 A validates the reply. e.g. it checks the B is subscribed to channel c and that that User A didn't block B from posting replies to the channel. A stores the reply in the channel's data.
 
 For each channel subscriber C, A sends the reply to C using the platform's core messaging protocol in a similar way to the way it sends a new status update from User A to all subscribers.
 
-?> Note that the reply is encrypted using DR between A and every recipient and is protected forward secrecy.
+> Note that the reply is encrypted using DR between A and every recipient and is protected forward secrecy.
 
 C stores the reply in its local channel data in the content of the content that the reply is for.
 
