@@ -45,7 +45,7 @@ A platform which is designed to protect people's universal rights to freely comm
 A lack of a digital communications platform which deeply integrates nano-transactions on a global scale using a fair un-game-able money.
 :::
 
-This problem is what holds crypto currencies back from achieving their full revolutionary potential for being a global means of payment without borders or interests of nation states, national banks and multinational corporations.
+This problem is what holds cryptocurrencies back from achieving their full revolutionary potential for being a global means of payment without borders or interests of nation states, national banks and multinational corporations.
 
 :::info #3
 Major platform risk of social media
@@ -54,7 +54,7 @@ Major platform risk of social media
 - Once people use a platform they are locked into it.
 - Users have to trust platform's promises about privacy protections which may change in any moment and without any notice.
 - Risk of privacy data leaks is real and serious.
--  Arbitrary and opaque network operator content censorship which may change at any time and without users consent and lack of anonymous expression options.
+- Arbitrary and opaque network operator content censorship which may change at any time and without users consent and lack of anonymous expression options.
 
 :::info #4
 Social media major contrition to the corruption of modern civilization and democratic societies.
@@ -66,7 +66,7 @@ Social media platforms are optimized for engagement and personal data abuse due 
 The absolute reliance of legacy social media platforms on ads is extremely harmful for civil society.
 :::
 
-Ads are brain washing mechanisms which are mostly designed to make people who don't buy (or can't afford) stuff they don't need unhappy. In many cases ads on social media masquerades as personally shared content by real people. This helps to create a false and distorted world view for many users. A world in which the only way out of anxiety is to consume more and to imitate the behavior of others as perceived on social media more.
+Ads are brainwashing mechanisms which are mostly designed to make people who don't buy (or can't afford) stuff they don't need unhappy. In many cases ads on social media masquerades as personally shared content by real people. This helps to create a false and distorted world view for many users. A world in which the only way out of anxiety is to consume more and to imitate the behavior of others as perceived on social media more.
 
 ---
 
@@ -77,7 +77,7 @@ This section answers what apps and main features we aim to build.
 The problems outlined in the previous section have been outlined by many in the discourse around digital platforms. However - fixing these problems is hard and requires both a major conceptual switch and nontrivial disruptive enabling technologies and products.
 :::
 
-Subnet is an highly-opinionated design for a platform that solves this problem. The platform includes a new network protocol called SUB - `The Subnet Network Protocol`, a design for how servers, clients and end-user applications communicate with each other to enable communication network services in a brand new way.
+Subnet is an highly-opinionated design for a platform that solves this problem. The platform includes a new network protocol called SUB - `The Subnet Network Protocol`, a design for how servers, clients and end-user applications communicate with each other to enable communication network services in a brand-new way.
 
 :::tip Imagine...
 Imagine a Whatsapp-like and a Twitter-like apps which are private, secure, 100% ads-free, censorship-free and tracking-free, built on top of a radically different decentralized open network infrastructure that is operating above the core Internet protocols in a scalable and highly incentive-compatible manner.
@@ -94,7 +94,7 @@ Our aim to build the following user-centric digital communications apps on top o
 - `Premium groups` - Paid content via a monthly subscription from several sources.
 - `Ephemeral Publishing` - Short-form content published to subscribers which is automatically deleted after some time.
 - `User-to-user payments` - Instant payments between any two users using a stable cryptocurrency.
-- `Priority Inbox` - Enable people to get paid for their attention. Your email inbox is a todo-list that others create for you to consider. Priority inbox is a todo list others pay for your to consider. Users get paid for opening and reading a message from their priority inbox by the message's sender.
+- `Priority Inbox` - Enable people to get paid for their attention. Your email inbox is a todo-list that others create for you to consider. Priority inbox is a todo list others pay for you to consider. Users get paid for opening and reading a message from their priority inbox by the message's sender.
 
 Future additional platform applications...
 - `Proxy / VPN`.
@@ -141,12 +141,12 @@ This section outlines the core platform architecture we are designing and buildi
 
 > we came up with a new and innovative design that integrates several modern technologies in a fundamental new way to build scalable and decentralized online communications apps.
 
-Our design combines in a novel way several breakthrough ideas and advancements in several areas such as crypto-currencies, payment channels, blockchain transaction processing, p2p networking, crypto-economics, and modern encryption.
+Our design combines in a novel way several breakthrough ideas and advancements in several areas such as cryptocurrencies, payment channels, blockchain transaction processing, p2p networking, crypto-economics, and modern encryption.
 
-We have designed a new kind of a p2p network running a set of new open source protocols operating under an honest majority security assumptions. We have designed decentralized user-generated content (text, audio, video, etc...) routing, storage and delivery mechanisms that gets the job done and are applicable as the enabling technology infrastructure for digital communications apps.
+We have designed a new kind of p2p network running a set of new open source protocols operating under an honest majority security assumptions. We have designed decentralized user-generated content (text, audio, video, etc...) routing, storage and delivery mechanisms that gets the job done and are applicable as the enabling technology infrastructure for digital communications apps.
 
 :::info vision
-We envision a network made of users and a federation of service providers. Clients use end-user software running on users devices such as smart phones and desktop computers (think a new kind of web browser).
+We envision a network made of users and a federation of service providers. Clients use end-user software running on users devices such as smartphones and desktop computers (think a new kind of web browser).
 :::
 
 ### Network Topology
@@ -159,7 +159,7 @@ The Subnet software platform has three main components:
 2. `Service Providers Nodes` - Software which service providers run to provide services to users and to form a federation of service providers.
 3. `Subnet Network Protocol (SUB)` - A network protocol that defines the ALL communications between clients and providers and between providers.
 
-Service providers is a federation of distinct entities which provide services to users and get compensated using cryptocurrency micro-payments and a pay-per-use business model.
+Service providers is a federation of distinct entities which provide services to users and get compensated using cryptocurrency micropayments and a pay-per-use business model.
 
 :::info
 Service providers compete with each other over users in a free market context based on the quality of service they provide for uses and social reputation with users.
@@ -173,7 +173,7 @@ Service providers nodes are designed to run 24x7 in the cloud, communicate with 
 Any user may move at-will from its current service provider to a new service provider with minimal service disruption.
 :::
 
-This is a core Subnet design principle that was established to prevent the creation of a monopoly of digital communications and social media service providers. This federated architecture is enabled by open standard network protocol and by a new buisness model for providers to profit from the services they provide to end users.
+This is a core Subnet design principle that was established to prevent the creation of a monopoly of digital communications and social media service providers. This federated architecture is enabled by open standard network protocol and by a new business model for providers to profit from the services they provide to end users.
 
 ---
 

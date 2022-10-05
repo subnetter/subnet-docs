@@ -17,20 +17,22 @@ The platform includes 5 main distinct network entities:
 5. Bootstrap p2p Nodes
 
 ### Service Providers Nodes
-Service Providers nodes are servers running a release of Subnetter - the Subnet p2p software for service providers. Service providers nodes must be online 24x7 and ipv4 (and/or ipv6) Internet-routable so they can receive incoming connections from clients and other nodes over the Internet.
+Service Providers nodes are servers running a release of Subnetter - the Subnet p2p software for service providers. Service providers nodes must be online 24x7 and IPV4 or IPV6 Internet-routable so they can receive incoming connections from clients and other nodes over the Internet.
 
-Service providers do not have access to any content sent or received on the network between users and users are able to verify authenticity and security of messages sent on the network without having to trust providers nodes.
+Service providers do not have access to any content sent or received on the network between users. Users are able to verify the authenticity and security of messages sent on the network without having to trust providers nodes.
 
 Service Providers Nodes are designed enable any two users to exchange data in higher-level communication protocols under the assumptions that user's client software is non-routable and often offline.
 
-Client software apps operated by users connect to providers nodes in order to send and receive messages. Subnet is desgined to support non-routable and often offline clients. Provider nodes provide a federated backbone for the Subnet network. Providers nodes route messages to thier users sent from other nodes.
+Client software apps operated by users connect to providers nodes in order to send and receive messages. Subnet is desgined to support non-routable and often offline clients. Provider nodes provide the federated backbone of the Subnet network. Providers nodes route messages to thier users sent from other nodes.
 
-As part of routing, providers nodes store users messages on a temporary ttl-based basis and forward user messages to other nodes when user's clients come back online and request for messages designated to them.
+As part of routing, providers nodes store users messages on a temporary ttl-based basis, and forward user messages to other nodes when a user's client goes online and sends a request for messages designated to it.
 
-Service Providers node also store encrypted user data that enable users to easily move from client to client and to migrate their account to another service provider.
+Service Providers node also store encrypted user data that enable users to easily migrate from client to client and to migrate their account to another service provider.
 
 ### The Subnet Blockchain
-Each Service Provider entity runs at least one SUB blockchain p2p node. These nodes run a blockchain p2p protocol between them and reach agreement on an `immutable global shared state` via a consensus protocol. Service Providers nodes are configured to use a blockchains node for cryptocurrency and data related functionality. The Subnet blockchain maintain users and providers coin accounts balances, identity bundles and providers service terms. It supports different kind of tokens and the core $SUB cryptocurrency. The Subnet blockchain is a global replicated database that is updated by an honest majority of Subnet blockchain nodes. Anyone, without limitation, can run an SUB blockchain node and provide the 'Blockchain Service' to the network. In other words, the Sunnet Blockchain is permisionless.
+Each Service Provider entity runs at least one SUB blockchain p2p node. These nodes run a blockchain p2p protocol between them and reach agreement on an `immutable global shared state` via a consensus protocol. Service Providers nodes are configured to use a blockchains node for cryptocurrency, identity and other Subnet data functionality. The Subnet blockchain maintains users' and providers' coin accounts balances, identity bundles and providers' service terms.
+
+It supports the core $SUB cryptocurrency and $SST, Subnet stable token. The Subnet blockchain is a globally replicated database that is updated by an honest majority of Subnet blockchain nodes. Anyone, without limitation, can run an SUB blockchain node and provide the 'Blockchain Service' to the network. In other words, the Sunnet Blockchain is permisionless.
 
 ### Bootstrap Nodes
 Bootstrap nodes are custom service providers nodes which are configured to provide public Subnet APIs to anyone. Bootstrap nodes do not provide non-public user-specific APIs as they do not provide specific network services to end-users. These are provided by service providers nodes. The public Subnet APIs enable users to locate service providers and to obtain data from the Subnet blockchain such as providers coin balances, users coin balances, users identity and providers identity.
