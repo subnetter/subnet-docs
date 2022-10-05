@@ -10,9 +10,8 @@ Service providers publish their identity bundles to enable clients and other ser
 
 There is no central server that stores bundles and no root certificates. Bundles are distributed over the network and any entity on the network can locate bundles based on public information such as entity's identity key. Bundles only contain public information that enables network entities to securely and privately communicate with them using SUB.
 
-:::note
-Bundles are stored on SUB blockchain. This guarantees that at any time, any client or provider is able to obtain any other client or provider bundle from the network without relying on a central domain name authority. In addition, the SUB blockchain provides censorship-free store. As long as there's at least one honest validator, providers and clients can't be blocked from publishing their identity to SUB by any party.
-:::
+> Bundles are stored on SUB blockchain. This guarantees that at any time, any client or provider is able to obtain any other client or provider bundle from the network without relying on a central domain name authority. In addition, the SUB blockchain provides censorship-free store. As long as there's at least one honest validator, providers and clients can't be blocked from publishing their identity to SUB by any party.
+
 
 - `ProviderIdentityBundle` is a certificate created and published by a service provider to announce its identity, additional public key and network dial-up info.
 

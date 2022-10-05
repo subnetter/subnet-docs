@@ -83,9 +83,8 @@ These message pairs are specified using the `protobuf3` messages syntax. So, for
 
 These messages are always sent encrypted in a two-party double-ratchet session using the `Message` or `NewSession` methods of the `Provider Service`. Also note that the messages are fully asynchronous so responses may be received out of order.
 
-:::note
-This design pattern is used in the design all other SUB app-level protocols.
-:::
+> This design pattern is used in the design all other SUB app-level protocols.
+
 
 ### The RouteMessage Method
 This method is the main method used to deliver an app-protocol messages from a user's client to another user's client and therefore used in many use cases.
