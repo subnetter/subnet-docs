@@ -102,7 +102,7 @@ Future additional platform applications...
 - Emergent use cases we can't imagine just yet...
 
 #### Instant Messaging (1:1)
-Anyone should be able send and receive short multimedia (text, images, videos, emojis, etc...) messages from any other person (or entity such as an organization or AI) without any limitation, and to block anyone from sending him unwanted messages.
+Anyone should be able to send and receive short multimedia (text, images, videos, emojis, etc...) messages from any other person (or entity such as an organization or AI) without any limitation, and to block anyone from sending him unwanted messages.
 
 #### Group Messaging (n:n)
 Anyone should be able to create a private chat group and determine which other people can become members of the group.

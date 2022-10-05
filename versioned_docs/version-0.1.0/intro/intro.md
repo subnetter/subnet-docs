@@ -47,7 +47,7 @@ A platform which is designed to protect people's universal rights to freely comm
 A lack of a digital communications platform which deeply integrates nano-transactions on a global scale using a fair un-game-able money.
 :::
 
-This problem is what holds crypto currencies back from achieving their full revolutionary potential for being a global means of payment without borders or interests of nation states, national banks and multinational corporations.
+This problem is what holds cryptocurrencies back from achieving their full revolutionary potential for being a global means of payment without borders or interests of nation states, national banks and multinational corporations.
 
 :::info #3
 Major platform risk of social media
@@ -68,7 +68,7 @@ Social media platforms are optimized for engagement and personal data abuse due 
 The absolute reliance of legacy social media platforms on ads is extremely harmful for civil society.
 :::
 
-Ads are brain washing mechanisms which are mostly designed to make people who don't buy (or can't afford) stuff they don't need unhappy. In many cases ads on social media masquerades as personally shared content by real people. This helps to create a false and distorted world view for many users. A world in which the only way out of anxiety is to consume more and to imitate the behavior of others as perceived on social media more.
+Ads are brainwashing mechanisms which are mostly designed to make people who don't buy (or can't afford) stuff they don't need unhappy. In many cases ads on social media masquerades as personally shared content by real people. This helps to create a false and distorted world view for many users. A world in which the only way out of anxiety is to consume more and to imitate the behavior of others as perceived on social media more.
 
 ---
 
@@ -104,7 +104,7 @@ Future additional platform applications...
 - Emergent use cases we can't imagine just yet...
 
 #### Instant Messaging (1:1)
-Anyone should be able send and receive short multimedia (text, images, videos, emojis, etc...) messages from any other person (or entity such as an organization or AI) without any limitation, and to block anyone from sending him unwanted messages.
+Anyone should be able to send and receive short multimedia (text, images, videos, emojis, etc...) messages from any other person (or entity such as an organization or AI) without any limitation, and to block anyone from sending him unwanted messages.
 
 #### Group Messaging (n:n)
 Anyone should be able to create a private chat group and determine which other people can become members of the group.
@@ -143,12 +143,12 @@ This section outlines the core platform architecture we are designing and buildi
 
 > we came up with a new and innovative design that integrates several modern technologies in a fundamental new way to build scalable and decentralized online communications apps.
 
-Our design combines in a novel way several breakthrough ideas and advancements in several areas such as crypto-currencies, payment channels, blockchain transaction processing, p2p networking, crypto-economics, and modern encryption.
+Our design combines in a novel way several breakthrough ideas and advancements in several areas such as cryptocurrencies, payment channels, blockchain transaction processing, p2p networking, crypto-economics, and modern encryption.
 
-We have designed a new kind of a p2p network running a set of new open source protocols operating under an honest majority security assumptions. We have designed decentralized user-generated content (text, audio, video, etc...) routing, storage and delivery mechanisms that gets the job done and are applicable as the enabling technology infrastructure for digital communications apps.
+We have designed a new kind of p2p network running a set of new open source protocols operating under an honest majority security assumptions. We have designed decentralized user-generated content (text, audio, video, etc...) routing, storage and delivery mechanisms that gets the job done and are applicable as the enabling technology infrastructure for digital communications apps.
 
 :::info vision
-We envision a network made of users and a federation of service providers. Clients use end-user software running on users devices such as smart phones and desktop computers (think a new kind of web browser).
+We envision a network made of users and a federation of service providers. Clients use end-user software running on users devices such as smartphones and desktop computers (think a new kind of web browser).
 :::
 
 ### Network Topology
@@ -196,6 +196,6 @@ For all inquiries email subnetter@pm.me.
 
 ----
 
-:::tip License
+:::info License
 Copyright (c) 2021 by the [Subnet Authors](https://github.com/subnetter?tab=repositories). This work is licensed under the [Subnet License](/docs/license).
 :::

@@ -1,4 +1,4 @@
----
+\---
 id: bizmodel
 title: Business Model
 sidebar_label: Business Model
@@ -6,11 +6,11 @@ sidebar_label: Business Model
 
 
 #### Insight #1: The is no free lunch
-In online digital services, like in life, there is no free lunch and someone always needs to pay the bill. There are three main ways for paying for online digital communciations services.
+In online digital services, like in life, there is no free lunch and someone always needs to pay the bill. There are three main ways for paying for online digital communications services.
 
 1. **Ads**. Use a service which displays ads and give some of your digital attention to experience these ads. e.g. promoted tweets, moments, etc... For this model to work, users must allow the service to track their online usage habits and build personal profiles of users, as without strong ad targeting these models are always less profitable or might not be profitable due to competition on advertisers budgets. Personalized ads are more proftiable than non-personalized ones.
 
-2. **Donations, Grants and Taxes** Have someone else pay for the service so you can use it for free. For example, Wikipedia is supported by donations and grants. The BBC world service is funded by the British tax-payers. The Signal messaging service is funded by a $50M grant from WhatsApp co-founder.
+2. **Donations, Grants and Taxes** Have someone else pay for the service so you can use it for free. For example, Wikipedia is supported by donations and grants. The BBC world service is funded by the British taxpayers. The Signal messaging service is funded by a $50M grant from WhatsApp co-founder.
 
 3. **Direct Pay**. Pay directly to the service provider for provided content or services. This can be a one-time per content fee or a recurring subscription fee for access to capabilities and content for a time period. For example, The Wall Street Journal, Netflix and New York Times online subscription plans.
 
@@ -23,7 +23,7 @@ If you choose a service that is paid by donations of others, then it might not b
 
 Subnet will be compelling to people who find the paid services option better than the other alternatives, assuming it can provide an excellent user-experience on par with ad-supported messaging platforms. We assume that at least tens of millions of people and maybe up to low hundreds of millions of people fall within this catergory. This is a large addressable and underserved market.
 
-In Subnet, network servives are provided by entities who chose to serve users and to get compensated for their provided services. Users pay for using the service to these entities directly and without any intermediate third-party. Payments are done using a cryptocurrency which is designed to empower the service. The crypto technology empowering the service enables frictionless nano-payments (payments significantly smaller than micro-payments) from users to service providers and from users to other users.
+In Subnet, network services are provided by entities who chose to serve users and to get compensated for their provided services. Users pay for using the service to these entities directly and without any intermediate third-party. Payments are done using a cryptocurrency which is designed to empower the service. The crypto technology empowering the service enables frictionless nano-payments (payments significantly smaller than micropayments) from users to service providers and from users to other users.
 
 Subnet network services are not provided by a company or an organization that is able to change its privacy policy, terms of use, or usage fees at will. It can't be forced into giving away users private data to government official requests. By design, the entities collectively providing the service do not have separately or jointly access to any private user data. In other words, Subnet privacy design starts by removing the corporation as a monolithic entity that has most user data and replacing it by a federation of service providers which don't have access to user data.
 
@@ -34,10 +34,10 @@ Regulation is proposed by many as the best way we have to solve problem with pre
 
 #### Insight #5: Some people don't to subsidize their online communications costs by sale of their data and metadata
 
-Subnet aims to become a platform where users strongly control who has access to the data they create and publish. There is no option for service providers to obtain and sell users data. Subnet is designed to appeal to this market segment and to provide it an alternative for paying for digital services. In a world of 4 billions of people online, 'some' may apply to hundreds of millions of people worldwide.
+Subnet aims to become a platform where users strongly control who has access to the data they create and publish. There is no option for service providers to obtain and sell users data. Subnet is designed to appeal to this market segment and to provide it an alternative for paying for digital services. In a world of 4 billion people online, 'some' may apply to hundreds of millions of people worldwide.
 
 #### Insight #6: Privacy and user data ownership is the moat
-It will be extremely difficult for the current public digital service providers companies to switch to a privacy-first business model due to vast majority of their revenue derived from abusing users privacy and a corporate mandate to maximize shareholders value and not users value. Public companies are prisoners of their cash cows and corporate mandate.
+It will be extremely difficult for the current public digital service providers companies to switch to a privacy-first business model due to the vast majority of their revenue derived from abusing users privacy and a corporate mandate to maximize shareholders value and not users value. Public companies are prisoners of their cash cows and corporate mandate.
 
 ---
 

@@ -17,7 +17,7 @@ The platform includes 5 main distinct network entities:
 5. Bootstrap p2p Nodes
 
 ### Service Providers Nodes
-Service Providers nodes are servers running a release of Subnetter - the Subnet p2p software for service providers. Service providers nodes must be online 24x7 and IPV4 or IPV6 Internet-routable so they can receive incoming connections from clients and other nodes over the Internet.
+Service Providers nodes are servers running a release of Subnetter - the Subnet p2p software for service providers. Service providers nodes must be online 24x7 and IPV4 or IPV6 Internet-routable, so they can receive incoming connections from clients and other nodes over the Internet.
 
 Service providers do not have access to any content sent or received on the network between users. Users are able to verify the authenticity and security of messages sent on the network without having to trust providers nodes.
 
@@ -32,7 +32,7 @@ Service Providers node also store encrypted user data that enable users to easil
 ### The Subnet Blockchain
 Each Service Provider entity runs at least one SUB blockchain p2p node. These nodes run a blockchain p2p protocol between them and reach agreement on an `immutable global shared state` via a consensus protocol. Service Providers nodes are configured to use a blockchains node for cryptocurrency, identity and other Subnet data functionality. The Subnet blockchain maintains users' and providers' coin accounts balances, identity bundles and providers' service terms.
 
-It supports the core $SUB cryptocurrency and $SST, Subnet stable token. The Subnet blockchain is a globally replicated database that is updated by an honest majority of Subnet blockchain nodes. Anyone, without limitation, can run an SUB blockchain node and provide the 'Blockchain Service' to the network. In other words, the Sunnet Blockchain is permisionless.
+It supports the core $SUB cryptocurrency and $SST, Subnet stable token. The Subnet blockchain is a globally replicated database that is updated by an honest majority of Subnet blockchain nodes. Anyone, without limitation, can run an SUB blockchain node and provide the 'Blockchain Service' to the network. In other words, the Subnet Blockchain is permissionless.
 
 ### Bootstrap Nodes
 Bootstrap nodes are custom service providers nodes which are configured to provide public Subnet APIs to anyone. Bootstrap nodes do not provide non-public user-specific APIs as they do not provide specific network services to end-users. These are provided by service providers nodes. The public Subnet APIs enable users to locate service providers and to obtain data from the Subnet blockchain such as providers coin balances, users coin balances, users identity and providers identity.
