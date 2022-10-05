@@ -8,7 +8,7 @@ sidebar_label: Sending Messages
 
 The Subnet Network Protocol (a.k.a SUB) is a message-oriented protocol built on-top of TCP/IP. A direct message is a 1:1 message sent from one entity (sender) to another entity (receiver) using the SUB network protocol. An entity is a `Service Provider Node` operated by a service provider, or a user's `client` running on his mobile device or computer. This document described how direct messages are sent in SUB.
 
-SUB doesn't make strong assumptions regarding clients Inetrnet connectivity. It is assumed that clients use mobile devices, may not be able to receive incoming TCP/IP connections requests, go offline and online often and frequently change their IP address. These assumptions is based on the actuall typical configuration and usage patterns of mobile devices.
+SUB doesn't make strong assumptions regarding clients Internet connectivity. It is assumed that clients use mobile devices, may not be able to receive incoming TCP/IP connections requests, go offline and online often and frequently change their IP address. These assumptions is based on the actually typical configuration and usage patterns of mobile devices.
 
 The core direct messaging algorithm described in this document is one of the fundamental networking algorithms in SUB. Many platform features and higher-level SUB algorithms utilize the core direct messaging algorithm. For example,  the `status updates` and the `group messaging` algorithms.
 
@@ -22,7 +22,7 @@ The following algorithm describes the flow of `sending a message with arbitrary 
 
 The algorithm is a bit involved, but is necessary for SUB to meet its design goals regarding messages delivery, security, forward security, backward security, privacy and support for frequent-offline non-routable clients.
 
-> Subnet has built a prototype and a playground that demonstrate the capabilities, correctness and feasabiliity of the message sending and receiving algroithms.
+> Subnet has built a prototype and a playground that demonstrate the capabilities, correctness and feasibility of the message sending and receiving algorithms.
 
 ## Overview
 
@@ -74,12 +74,12 @@ The actual message payload sent from A to B is in a higher-level network protoco
 ### Step 1 - A Gets B and SB Bundles
 A sends a `GetClientBundleId(B)` message to SA. The message is encrypted in a DR session between A and SA.
 
-> As an alternative, A can also obtain B's `Bundle(B, SB)` by quering any entity which provides the SUB public blockchain API such as community public SUB blockchain nodes or SUB bootstrap nodes. SUB bootstrap nodes all run SUB blockchain nodes.
+> As an alternative, A can also obtain B's `Bundle(B, SB)` by querying any entity which provides the SUB public blockchain API such as community public SUB blockchain nodes or SUB bootstrap nodes. SUB bootstrap nodes all run SUB blockchain nodes.
 
 ### Step 2 - SA returns Bundle(B, SB)
 When B started being serviced by SB, SB published `ProviderSignedClientIdentityBundle(SB, B)` to the SUB blockchain via a store client bundle transaction.
 
-SA queries the SUB blockchain to get `ProviderSignedClientIdentityBundle(SB, B)` and returns it to A. SA, and other service providers run an SUB blockchain node and so can read the requested data from their node's API. `ProviderSignedClientIdentityBundle(SB, B)` is stored on the SUB blockchain as part of the client's bootstrap process with thier service providers. So the data is already available to SA in its SUB blockchain global state and it doesn't need to use the network to obtain it.
+SA queries the SUB blockchain to get `ProviderSignedClientIdentityBundle(SB, B)` and returns it to A. SA, and other service providers run an SUB blockchain node and so can read the requested data from their node's API. `ProviderSignedClientIdentityBundle(SB, B)` is stored on the SUB blockchain as part of the client's bootstrap process with their service providers. So the data is already available to SA in its SUB blockchain global state and it doesn't need to use the network to obtain it.
 
 ```protobuf
 // Provider published client bundle - includes provider signature on the data.
@@ -264,7 +264,7 @@ Conceptually the message A sends to SA has the following structure.
 
 This somewhat involved algorithm is required to ensure privacy and forward secrecy.
 
-All messages between two parties are encrypted using the DR two-party algorithm. This means that A's message to SB and to B needs to use an existing double-ratchet session between the parties or that A needs to create a new session with SB and B. The X2DH information A has about SB and B enables it to do so. A is able to do perform these encryptions due to access to `X2DH(B, SB)`. This bundle allows A to establish a shared double-ratchet session with both B and with SB. It already has a double-ratchet session with SA as part of the bootstrap process. This design ensures that SA doesn't know that A is sending a message to B as A only asks it to send a message through SB and doesn't reveal B's identity to SA. SB doesn't know that A is sending a message to B because it only knows that SA asked it to send a message to B `on behalf of a client` and it has no access to A's identity.
+All messages between two parties are encrypted using the DR two-party algorithm. This means that A's message to SB and to B needs to use an existing double-ratchet session between the parties or that A needs to create a new session with SB and B. The X2DH information A has about SB and B enables it to do so. A is able to do perform this encryption due to access to `X2DH(B, SB)`. This bundle allows A to establish a shared double-ratchet session with both B and with SB. It already has a double-ratchet session with SA as part of the bootstrap process. This design ensures that SA doesn't know that A is sending a message to B as A only asks it to send a message through SB and does not reveal B's identity to SA. SB doesn't know that A is sending a message to B because it only knows that SA asked it to send a message to B `on behalf of a client` and it has no access to A's identity.
 
 Note that only SB public info, and an ephemeral public key are visible to SA. All other data is encrypted. Only SB is able to decrypt the payload to get message M2. In M2, only B public info and an ephemeral public key are in cleartext. Only B can decrypt the encrypted parts of this payload with its keys.
 
@@ -313,7 +313,7 @@ A creates the message to B and wraps it in a `NewSession` method if there is no 
 It creates and signs a `MessageToServicedClientRequest` with its body set to the message to B. It prepares and sign `payment authorization` for the message delivery fee, adds it to the message and sends it to SA.
 
 ### Step 4 - Message Processing
-SA gets the message, verifies the payment authorization, verifies that it serves both A and B and storeד the message to B for delivery next time B connects to it, or alternatively, push it to B if B is online is connected to SA when the message from A is received.
+SA gets the message, verifies the payment authorization, verifies that it serves both A and B and store the message to B for delivery next time B connects to it, or alternatively, push it to B if B is online is connected to SA when the message from A is received.
 
 :::note
 Note that in this case, SA knows that A and B, both clients it is serving are communicating with each other but not the content of their messages with is private between A and B.

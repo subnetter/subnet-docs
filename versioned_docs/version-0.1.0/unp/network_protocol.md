@@ -16,7 +16,7 @@ The following diagram outline the SUB network stack:
 
 `App protocol` is a Subnet communications protocol defined as a set of typed messages that provide app-specific functionality. Typically messages are `request messages`, initiated by an entity who starts an operation, and `response messages` which returns data requested in a request. Messages are asynchronous and response messages may be received in any order. When needed, response messages includes an identifier of a request message to enable receiver to associate the response with a request. Messages are defined using the protobuf3 rpc definition language using protobuf messages data type.
 
-`ProviderCore` is a `grpc service` implemented by service providers nodes to receive messages from other network entities. In SUB, network entities are users's client software and service providers nodes. These entities form a virtual SUB network over the Internet. Each network is identified by an id designed to enable several SUB networks to operate concurrently and separately over the Internet.
+`ProviderCore` is a `grpc service` implemented by service providers nodes to receive messages from other network entities. In SUB, network entities are users' client software and service providers nodes. These entities form a virtual SUB network over the Internet. Each network is identified by an id designed to enable several SUB networks to operate concurrently and separately over the Internet.
 
 ProviderCoreService uses HTTP/2 and TCP/IP for transport.
 

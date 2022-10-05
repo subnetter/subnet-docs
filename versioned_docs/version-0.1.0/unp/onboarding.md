@@ -8,7 +8,7 @@ sidebar_label: Onboarding Clients
 Clients are apps run by users on their digital devices. Clients go through the bootstrap sequence described here when connecting to the network for the first time. Clients may run the bootstrap sequence again at any time to replace the network provider that provides them with network services on the network with a different one.
 
 ## Entities
-The following entities are used in this walkthrough and (as well as in many other platform walkthroughs):
+The following entities are used in this walk-through and (as well as in many other platform walk-throughs):
 
 ```
 - `A` - Alice's client app.

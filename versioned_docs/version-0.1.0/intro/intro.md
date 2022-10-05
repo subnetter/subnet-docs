@@ -175,7 +175,7 @@ Service providers nodes are designed to run 24x7 in the cloud, communicate with 
 Any user may move at-will from its current service provider to a new service provider with minimal service disruption.
 :::
 
-This is a core Subnet design principle that was established to prevent the creation of a monopoly of digital communications and social media service providers. This federated architecture is enabled by open standard network protocol and by a new buisness model for providers to profit from the services they provide to end users.
+This is a core Subnet design principle that was established to prevent the creation of a monopoly of digital communications and social media service providers. This federated architecture is enabled by open standard network protocol and by a new business model for providers to profit from the services they provide to end users.
 
 ---
 

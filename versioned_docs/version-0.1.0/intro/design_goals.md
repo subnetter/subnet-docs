@@ -22,7 +22,7 @@ This helps mitigating spam as there's a cost for every client message and publis
 ### Incentive Compatibility
 Service providers are incentivized to provide clients with services and to behave according to the SUB network protocol and not deviate from it.
 
-As servie providers are paid by clients for services, per action performed, they have a strong incentive to provide the service as clients are always free to replace them with another service provider available on the network.
+As service providers are paid by clients for services, per action performed, they have a strong incentive to provide the service as clients are always free to replace them with another service provider available on the network.
 
 Incentive-compatibility helps to achieve sustainability.
 

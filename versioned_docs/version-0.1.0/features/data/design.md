@@ -19,7 +19,7 @@ Some content items shared over SUB between users are marked with a non-zero ttl 
 ## Distributed Data Store
 Subnet includes a fully decentralized data store which is design to store public identity bundles, a ledger with users and providers coin balances and service terms. This data store is implemented in the `SUB Blockchain`. Bundles always have an expiration date, and the amount of data stored on the network is small even when it will have a large number of users, as bundles are small blobs of identity data and new bundles replace old ones.
 
- Providers runs an Subnet Blockchain nodes and provides the `Subnet Blockchain Service public API`. Sybil attacks are mitigated due to a transaction fee associated with adding or updating data. Service providers pay transactions fee for new clients to make the onboarding experience smoother.
+ Providers runs an Subnet Blockchain nodes and provides the `Subnet Blockchain Service public API`. Sybil attacks are mitigated due to a transaction fee associated with adding or updating data. Service providers pay transactions fee for new clients to make the on-boarding experience smoother.
 
 ## User Keys Backup
 Users are responsible to backup their private identity keys. When user's identity keys are lost, he will lose access to his identity and will need to create a new identity, and establish a new service with a service provider.
