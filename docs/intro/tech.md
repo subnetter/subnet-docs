@@ -50,7 +50,7 @@ Clients are not required to be Internet-routable, they only need to be able to c
 
 Subnet integrates four fundamental decentralization technologies to deliver the platform's design goals.
 
-1. A `Blockchain Serice` used for name resolution and network services discovery, implemented using a permisionless blockchain.
+1. A `Blockchain Serice` used for name resolution and network services discovery, implemented using a permissionless blockchain.
 
 2. A blockchain-style `consensus protocol` over a cryptocurrency ledger with built-in support to a small and well-defined set of transaction types, a `native cryptocurrency` and a `decentralized stable coin`.
 
@@ -63,22 +63,20 @@ Subnet replaces centralized managed network servers used in legacy internet serv
 ## Building Blocks
 
 ### Subnet Blockchain
-Subnet blockchain nodes run a distributed consensus protocol and agree on a canonical ledger between them. The simple ledger includes identity bundles, accounts $SUB coin and token balances. The ledger is where $SUB coin balances settle. For example, clients deposit funds to service providers by sending $SUB coin to provider's blockchain account via a blockchain transaction and preriodical users bills are settled on the SUB blockchain.
+Subnet blockchain nodes run a distributed consensus protocol and agree on a canonical ledger between them. The simple ledger includes identity bundles, accounts $SUB (Subnet core cryptocurrency) and $SST (Subnet stable token) balances. The ledger is where $SUB and $SST coin balances settle. For example, clients deposit funds to service providers by sending $SST tokens to provider's blockchain account via a blockchain transaction and periodical users bills are settled on the SUB blockchain.
 
 #### Account Model
-An account model is more appropiate for the subnet blockchain instead of UTXO model.
-
-> TODO detail support for `hash-locked accounts` - enabling the priority inbox app and deposits.
+An account model is more appropriate for the subnet blockchain instead of UTXO model.
 
 ### Proof of Useful Work (PoUW)
-Subnet blockchain nodes use `proofs of useful work` (PoUW) when deciding how to act on messages that only other service providers send them according to SUB. This helps spam preventsion, storage waste and protocol abuse. Proof of useful work can be easily verified with on-chain data that provides evidence of good behavior and work according to the Subnet blockchain consensus protocol - e.g. blocks production, participation in consensus protocol over a period of time, and getting coin awards for honest useful behavior. In other words, service providers must run Subnet blockchain nodes and prove that to other providers when sending messages to them.
+Subnet blockchain nodes use `proofs of useful work` (PoUW) when deciding how to act on messages that only other service providers send them according to SUB. This helps spam prevention, storage waste and protocol abuse. Proofs of useful work can be easily verified with on-chain data that provides evidence of good behavior and work according to the Subnet blockchain consensus protocol - e.g. blocks production, participation in consensus protocol over a period of time, and getting coin awards for honest useful behavior. In other words, service providers must run Subnet blockchain nodes and prove that to other providers when sending messages to them.
 
 ### The X2DH Protocol
-Employed between 2 entities to exchange public keys used for creating shared secrets between entities which are further used to secure communications between entities.
+Employed between two Subnet network entities to exchange public keys used for creating shared secrets between the entities. These secrets are further used to secure communications between the entities.
+
 :::info
-We chose to use X2DH over X3DH as X3DH leaks message senders identity. X2DH enables receiver to authenticate sender without leaking sender's identity to other entities.
+We chose to use X2DH over X3DH as X3DH leaks message senders identity. X2DH enables receivers to authenticate senders without leaking the sender's identity.
 :::
 
 ### The Double Ratchet Algorithm
-We employ a modifed version of the Double Ratchet algorithm to create secure communications channel between any to entities on the SUB network. Two entities use a 2XDH generated shared secret to create three chains of encryption keys which are used to secure messages between them: a root chain, a send chain and a receive chain. In addition, message headers are encrypted using header encryption.
-[todo: For more information... link to double-ratchet spec here...]
+We employ a modified version of the Double Ratchet algorithm to create secure communications channel between any to entities on the SUB network. Two entities use a 2XDH generated shared secret to create three chains of encryption keys which are used to secure messages between them: a root-chain, a send-chain and a receive-chain. In addition, message headers are encrypted using header encryption.
