@@ -49,7 +49,7 @@ const features = [
     imageUrl: 'logo_basic_var6_white.png',
     description: (
       <>
-        Clear and strong project values about identity, censorship, moderation, users privacy and users rights drive all the platform's design decisions so users interests and considirations are always first. By design, no company can put its interest above the user's.
+        Clear and strong project values about identity, censorship, moderation, users privacy and users rights drive all the platform's design decisions so users interests and considerations are always first. By design, no company can put its interest above the user's.
       </>
     ),
   },
@@ -58,7 +58,7 @@ const features = [
     imageUrl: 'logo_basic_var7_white.png',
     description: (
       <>
-        All Subnet software and network protocols are 100% open source and are fully auditale by any security expert to ensure that the apps you install behave what they promise you they behave, are not spying on you, and are not using you as a feature in a product they sell to other companies.
+        All Subnet software and network protocols are 100% open source and are fully auditable by any security expert to ensure that the apps you install behave what they promise you they behave, are not spying on you, and are not using you as a feature in a product they sell to other companies.
       </>
     ),
   },
